@@ -9,7 +9,18 @@
         >
       </el-col>
       <el-col :xs="12" :sm="11" class="image-upload">
-        <el-button type="primary" style="float: left;" size="small" plain>上传图片</el-button>
+        <!-- <el-button type="primary" style="float: left;" size="small" plain>上传图片</el-button> -->
+        <el-upload style="float: left;"
+          class="upload-demo"
+          action="https://jsonplaceholder.typicode.com/posts/"
+          multiple
+          :limit="1"
+          :file-list="fileList">
+          <el-button size="small" type="primary">点击上传</el-button>
+          <div slot="tip" class="el-upload__tip">jpg/png & 500kb</div>
+        </el-upload>
+
+
       </el-col>
     </el-row>
 
@@ -21,18 +32,12 @@
     </el-row>
 
     <el-row class="input-line-row">
-      <el-col :span="7" class="input-label">学号：</el-col>
+      <el-col :span="7" class="input-label">身份证号：</el-col>
       <el-col :span="10">
         <el-input v-model="user_name" placeholder="请输入内容"></el-input>
       </el-col>
     </el-row>
 
-    <el-row class="input-line-row">
-      <el-col :span="7" class="input-label">学院：</el-col>
-      <el-col :span="10">
-        <el-input v-model="user_name" placeholder="请输入内容"></el-input>
-      </el-col>
-    </el-row>
 
     <el-row class="input-line-row">
       <el-col :span="7" class="input-label">专业：</el-col>
@@ -74,10 +79,8 @@
     </el-row>
 
     <el-row class="input-line-row">
-      <el-button type="primary" size="medium" style="width: 150px;">  提交  </el-button>
+      <el-button type="primary" size="medium" style="width: 150px;">提交</el-button>
     </el-row>
-
-
   </el-row>
 </template>
 
@@ -88,7 +91,8 @@ export default {
     return {
       msg: "Welcome to Your Vue.js App",
       user_name: "",
-      radio2: 3
+      radio2: 3,
+      fileList: []
     };
   }
 };

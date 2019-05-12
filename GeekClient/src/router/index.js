@@ -12,28 +12,46 @@ import ModifyPassword from '@/pages/userinfo/menuitems/ModifyPassword'
 import FeedBack from '@/pages/userinfo/menuitems/FeedBack'
 import PublishTask from '@/pages/userinfo/menuitems/PublishTask'
 import MyTask from '@/pages/userinfo/menuitems/MyTask'
+import TaskDetail from   '@/pages/task/TaskDetail'
+import Login from '@/pages/login/Login'
+import Register from '@/pages/register/Register'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/app',
       name: 'Main',
       component: Main
     },
     {
-      path: '/task_main',
-      name: 'Main',
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/app/task_main',
+      name: 'TaskMain',
       component: TaskMain
     },
     {
-      path: '/account_public_detail',
+      path: '/app/task_detail',
+      name: 'TaskDetail',
+      component: TaskDetail
+    },
+    {
+      path: '/app/account_public_detail',
       name: 'AccountMain',
       component: AccountMain
     },
     {
-      path: '/user_info',
+      path: '/app/user_info',
       name: 'UserMain',
       component: UserMain,
       children: [

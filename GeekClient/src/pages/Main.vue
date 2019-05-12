@@ -2,7 +2,7 @@
   <div id="app">
     <app-header></app-header>
     <el-main>
-      <div style="margin-left: -20px; margin-right:-20px;">
+      <div class="main_page">
         <el-row :gutter="10">
           <el-col :span="24">
             <span style="color: #ffffff; font-size:40px;display:block; margin-top: 50px;">极客网</span>
@@ -20,8 +20,8 @@
         <el-row :gutter="10">
           <el-col :span="24">
             <span style="color: #ffffff; font-size:20px;display:block; margin-top: 40px;">
-              <router-link to="/user_info/publish-task">
-                <el-button type="primary" style="width: 200px;" >发布需求</el-button>
+              <router-link to="/app/user_info/publish-task">
+                <el-button type="primary" style="width: 200px;">发布需求</el-button>
               </router-link>
             </span>
           </el-col>
@@ -30,7 +30,7 @@
         <el-row :gutter="10">
           <el-col :span="24">
             <span style="color: #ffffff; font-size:20px;display:block; margin-top: 20px;">
-              <router-link to="/task_main">
+              <router-link to="/app/task_main">
                 <el-button style="background-color: transparent; width: 200px;" type="primary">需求列表</el-button>
               </router-link>
             </span>
@@ -40,53 +40,52 @@
         <div class="bottom-content">
           <el-row :gutter="10">
             <el-col :span="12">
-              <span
-                style=" font-size:20px;display:block;  margin-left:-70px;"
-              >如果你有需求：</span>
-
               <el-row>
                 <el-col :span="8">
                   <div style="visibility:hidden;">sdds</div>
                 </el-col>
                 <el-col :span="12">
                   <div class="need_item">
-                    <p>
+                    <span style=" font-size:20px;display:block;   ">
+                      <b>如果你有需求：</b>
+                    </span>
+                    <span>
                       - 有好点子，
                       <b>就差一个程序员了</b>
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 想通过，
                       <b>爬虫</b>
                       获取数据
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 需要进行繁杂的
                       <b>数据分析、可视化</b>
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 想
                       <b>学习编程技巧</b>
-                    </p>
-                    <p>.</p>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 需要
                       <b>人工智能</b>帮你做点什么
-                    </p>
-                    <p>.</p>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 想上
                       <b>Google</b>,但缺乏工具
-                    </p>
-                    <br>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 电脑坏了,
                       <b>但不会修</b>
-                    </p>
-                    <p>
-                      <router-link to="/user_info/publish-task">
-                        <el-button style="margin-top: 40px; margin-left: -140px;">立即发布需求</el-button>
+                    </span>
+                    <span>
+                      <router-link to="/app/user_info/publish-task">
+                        <el-button style="margin-top: 15px; ">立即发布需求</el-button>
                       </router-link>
-                    </p>
+                    </span>
                   </div>
                 </el-col>
                 <el-col :span="5">
@@ -95,53 +94,52 @@
               </el-row>
             </el-col>
             <el-col :span="12">
-              <span
-                style=" font-size:20px;display:block;  margin-left:-80px;"
-              >如果你会编程:</span>
-
               <el-row>
                 <el-col :span="8">
                   <div style="visibility:hidden;">sdds</div>
                 </el-col>
                 <el-col :span="12">
                   <div class="need_item">
-                    <p>
+                    <span style=" font-size:20px;display:block;   ">
+                      <b>如果你会编程:</b>
+                    </span>
+                    <span>
                       - 有好点子，
                       <b>就差一个程序员了</b>
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 想通过，
                       <b>爬虫</b>
                       获取数据
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 需要进行繁杂的
                       <b>数据分析、可视化</b>
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       - 想
                       <b>学习编程技巧</b>
-                    </p>
-                    <p>.</p>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 需要
                       <b>人工智能</b>帮你做点什么
-                    </p>
-                    <p>.</p>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 想上
                       <b>Google</b>,但缺乏工具
-                    </p>
-                    <br>
-                    <p>
+                    </span>
+                    
+                    <span>
                       - 电脑坏了,
                       <b>但不会修</b>
-                    </p>
-                    <p>
-                      <router-link to="/task_main">
-                        <el-button style="margin-top: 40px; margin-left: -140px;">查看需求列表</el-button>
+                    </span>
+                    <span>
+                      <router-link to="/app/task_main">
+                        <el-button style="margin-top: 15px;  ">查看需求列表</el-button>
                       </router-link>
-                    </p>
+                    </span>
                   </div>
                 </el-col>
                 <el-col :span="5">
@@ -169,8 +167,12 @@ export default {
   name: "Main",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
+      loginEmail:""
     };
+  },
+  mounted() {
+    console.log("mounted");
   }
 };
 </script>
@@ -184,13 +186,19 @@ export default {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-
   padding-top: 60px;
   background: url("/static/img/es6daily.jpg");
   z-index: 0;
-  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
 }
-.main-body {
+.main_page {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
 }
 
 .el-col {
@@ -199,16 +207,21 @@ export default {
 
 .bottom-content {
   background: #ffffff;
-  position: relative;
-  margin-top: 50px;
-  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  z-index: 0;
 }
 .need_item {
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: monospace;
 }
-.need_item p {
-  float: left;
+.need_item span {
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
 }
 </style>

@@ -2,17 +2,24 @@
   <el-header>
     <el-row style="margin-left: 20px; margin-right: 20px;">
       <el-col class="logo-part" :xs="12" :sm="12">
-        <router-link to="/">
-        
-            <img style="width:55px; height:55px;" src="/static/img/geek.png">
-            <img src="/static/img/geek+.png" style="padding-bottom: 16px;">
-         
+        <router-link to="/app">
+          <img style="width:55px; height:55px;" src="/static/img/geek.png">
+          <img src="/static/img/geek+.png" style="padding-bottom: 16px; width:50px;">
         </router-link>
       </el-col>
+
       <el-col class="user-buttons" :xs="12" :sm="12">
-        <router-link to="/user_info/user-detail">
+        <router-link to="/login" v-if="login_or_not == false">
+          <el-button type="primary" size="small">登录</el-button>
+        </router-link>
+
+        <router-link to="/register" v-if="login_or_not == false">
+          <el-button type="success" size="small">注册</el-button>
+        </router-link>
+
+        <router-link to="/app/user_info/user-detail" v-if="login_or_not == true">
           <el-button style="border: none;">
-            <span>18212010064 ▼</span>
+            <span>{{this.$store.state.qqNumber}} ▼</span>
           </el-button>
         </router-link>
       </el-col>
@@ -25,8 +32,20 @@ export default {
   name: "Header",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
+      login_or_not: false
     };
+  },
+  mounted() {
+    console.log(this.$store.state.login_in_or_not + "main header mounted-" + this.$store.state.qqNumber )
+    if(this.$store.state.login_in_or_not == 'true'){
+      this.login_or_not  = true;
+    }
+  },
+  watch: {
+    loginEmail: function(newLoginEmail, oldLoginEmail) {
+      console.log(this.loginEmail);
+    }
   }
 };
 </script>

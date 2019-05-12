@@ -13,13 +13,15 @@
           <div class="grid-content bg-purple-middle">
             <el-row>
               <el-col :xs="24" :sm="6">
-                <el-button type="primary" class="new-task-button" icon="el-icon-upload2">发布需求</el-button>
+                <router-link to="/app/user_info/publish-task">
+                  <el-button type="primary" class="new-task-button" icon="el-icon-upload2">发布需求</el-button>
+                </router-link>
               </el-col>
 
               <el-col :xs="12" :sm="6">
-                <el-select v-model="value1" placeholder="全部类型">
+                <el-select v-model="typeValue" placeholder="全部类型">
                   <el-option
-                    v-for="item in options1"
+                    v-for="item in typeOptions"
                     :key="item.value"
                     :label="item.label"
                     :value="item.value"
@@ -29,9 +31,9 @@
               </el-col>
 
               <el-col :xs="12" :sm="6">
-                <el-select v-model="value1" placeholder="全部状态">
+                <el-select v-model="stateValue" placeholder="全部状态">
                   <el-option
-                    v-for="item in options1"
+                    v-for="item in stateOptions"
                     :key="item.value"
                     :label="item.label"
                     :value="item.value"
@@ -49,8 +51,8 @@
 
             <div class="task_body">
               <!-- 中间任务部分 -->
-              <span v-for="n in 3">
-                <task-item></task-item>
+              <span v-for="taskItem in taskList">
+                <task-item :taskItem="taskItem"></task-item>
               </span>
             </div>
           </div>
@@ -68,6 +70,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import AppHeader from "@/pages/header/Header";
 
 import AppFooter from "@/pages/footer/Footer";
@@ -84,16 +88,79 @@ export default {
     return {
       showTaskItem: true,
       showAccountInfo: false,
-      options1: [{
-          value: '选项1',
-          label: '黄金糕'
-        }, {
-          value: '选项2',
-          label: '双皮奶'
-        }],
-        value1: '',
-        input5: ''
+      taskList: [],
+      typeOptions: [
+        {
+          value: "team",
+          label: "开发团队招募"
+        },
+        {
+          value: "development",
+          label: "开发任务"
+        },
+        {
+          value: "knowledge",
+          label: "知识交流"
+        },
+        {
+          value: "homeTeacher",
+          label: "家教"
+        },
+        {
+          value: "other",
+          label: "其他"
+        }
+      ],
+      stateOptions: [
+        {
+          value: "all",
+          label: "全部状态"
+        },
+        {
+          value: "ing",
+          label: "招募中"
+        },
+        {
+          value: "end",
+          label: "截止报名"
+        }
+      ],
+      stateValue: "",
+      typeValue:"",
+      input5: ""
     };
+  },
+  mounted() {
+    console.log("mounted");
+    let that = this;
+    // token=1qfhiowrs1q7dj54d9lvvdfiodrtnnh5
+  //  var token = document.cookie.split("=")[1];
+
+    $.ajax({
+      type: "get",
+      url: "http://localhost:8083/task/tasks",
+      dataType: "json",
+      xhrFields: { withCredentials: true },
+      success: function(result) {
+        console.log(result);
+        if (result.statusCode == true) {
+          that.taskList = result.objectList;
+        }
+      }
+    });
+
+    // axios.get('http://localhost:8083/task/tasks', {
+    //   headers: {
+    //     "Content-Type": "application/json;charset=utf-8" , // 这一段必须加,
+    //     "Authorization" : "jewjwefewhf"
+    //   }
+    // }).then(function (response){
+    //   console.log(response)
+    //   that.taskList = response.data.objectList;
+    //   console.log(that.taskList)
+    // }).catch(function(error) {
+    //   console.log(error)
+    // })
   }
 };
 </script>
@@ -109,7 +176,8 @@ export default {
   text-align: center;
   z-index: 0;
   height: 600px;
-  padding-top: 70px;
+  padding-top: 75px;
+  padding-bottom: 40px;
 }
 .el-col {
   border-radius: 4px;

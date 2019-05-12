@@ -3,12 +3,12 @@
     <el-row>
       <el-col class="header" :xs="24">
         <span class="user-info-span">
-          <router-link to="/account_public_detail">
+          <router-link to="/app/account_public_detail">
             <img
               src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
               class="user-icon-small"
             >
-            鲁达师
+            {{taskItem.u_id}}
             <img src="/static/img/male.png" class="sex-icon">
           </router-link>
         </span>
@@ -16,14 +16,16 @@
           |
           <time>2 天前</time> 发布
           <span>
-            <el-tag size="small">招募中</el-tag>
+            <el-tag size="small">{{stateOptions[taskItem.taskState].label}}</el-tag>
           </span>
         </span>
       </el-col>
     </el-row>
     <el-row>
       <el-col :xs="24" class="task-link-col">
-        <a href="#" class="task-link">NO.15 时间管理类App（小程序）制作</a>
+        <router-link to="/app/task_detail" style="text-decoration: none;">
+          <span class="task-link">{{taskItem.taskTitle}}</span>
+        </router-link>
       </el-col>
     </el-row>
     <el-row>
@@ -31,7 +33,7 @@
         <div class="task-detal-item">
           <span class="light-color">类型:</span>
           <span>
-            <el-tag size="small">开发团队招募</el-tag>
+            <el-tag size="small">{{typeOptions[taskItem.taskType].label}}</el-tag>
           </span>
         </div>
 
@@ -55,10 +57,50 @@
 <script>
 export default {
   name: "Task",
+  props: ["taskItem"],
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
+      typeOptions: [
+        {
+          value: "team",
+          label: "开发团队招募"
+        },
+        {
+          value: "development",
+          label: "开发任务"
+        },
+        {
+          value: "knowledge",
+          label: "知识交流"
+        },
+        {
+          value: "homeTeacher",
+          label: "家教"
+        },
+        {
+          value: "other",
+          label: "其他"
+        }
+      ],
+      stateOptions: [
+        {
+          value: "all",
+          label: "全部状态"
+        },
+        {
+          value: "ing",
+          label: "招募中"
+        },
+        {
+          value: "end",
+          label: "截止报名"
+        }
+      ]
     };
+  },
+  mounted () { 
+      console.log(this.taskItem)
   }
 };
 </script>
@@ -102,10 +144,10 @@ export default {
 .task-link-col {
   height: 60px;
   line-height: 60px;
+  text-decoration: none;
   font-size: 18px;
 }
 .task-link {
-  text-decoration: none;
   color: #000;
 }
 .task-detail-col {

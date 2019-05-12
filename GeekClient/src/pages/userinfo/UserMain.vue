@@ -12,11 +12,10 @@
         <el-col :xs="24" :sm="22" :md="20" :lg="18">
           <div class="grid-content bg-purple-middle navbar">
             <el-row>
-            
               <el-col class="card-left" :xs="24" :sm="6">
                 <!-- 左边导航菜单 开始 -->
-                <el-row> 
-                  <router-link to="/user_info/publish-task">
+                <el-row>
+                  <router-link to="/app/user_info/publish-task">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-circle-plus-outline"></i>
@@ -27,7 +26,18 @@
                 </el-row>
 
                 <el-row>
-                  <router-link to="/user_info/user-detail">
+                  <router-link to="/app/task_main">
+                    <button type="button" class="el-button">
+                      <span>
+                        <i class="el-icon-document"></i>
+                        需求列表
+                      </span>
+                    </button>
+                  </router-link>
+                </el-row>
+
+                <el-row>
+                  <router-link to="/app/user_info/user-detail">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-edit-outline"></i> 用户信息
@@ -37,7 +47,7 @@
                 </el-row>
 
                 <el-row>
-                  <router-link to="/user_info/modify-password">
+                  <router-link to="/app/user_info/modify-password">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-warning"></i> 修改密码
@@ -47,7 +57,7 @@
                 </el-row>
 
                 <el-row>
-                  <router-link to="/user_info/publishd-task">
+                  <router-link to="/app/user_info/publishd-task">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-date"></i> 我发布的任务
@@ -57,7 +67,7 @@
                 </el-row>
 
                 <el-row>
-                  <router-link to="/user_info/my-task">
+                  <router-link to="/app/user_info/my-task">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-document"></i> 我报名的任务
@@ -66,8 +76,8 @@
                   </router-link>
                 </el-row>
 
-                <el-row> 
-                  <router-link to="/user_info/feed-back">
+                <el-row>
+                  <router-link to="/app/user_info/feed-back">
                     <button type="button" class="el-button">
                       <span>
                         <i class="el-icon-service"></i> 反馈
@@ -89,7 +99,7 @@
               </el-col>
 
               <el-col class="card-middle" :xs="24" :sm="1">
-                  <!-- blank -->
+                <!-- blank -->
                 <div class="grid-content"></div>
               </el-col>
 
@@ -99,8 +109,6 @@
                   <router-view></router-view>
                 </el-row>
               </el-col>
-
-
             </el-row>
           </div>
         </el-col>
@@ -144,7 +152,8 @@ export default {
   color: #333;
   text-align: center;
   height: 600px;
-  padding-top: 70px;
+  padding-top: 75px;
+  padding-bottom: 40px;
 }
 .el-col {
   border-radius: 4px;
