@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  geekservice:
+    build: com.geek-service
+    image: com.geek/com.geek-service
+    restart: always
+    ports:
+      - 12111:12111
+    networks:
+      - geek-network
+
+networks:
+  geek-network:
+    driver: bridge

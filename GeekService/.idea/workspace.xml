@@ -1,103 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce94ce40-467e-4329-8b85-543112987bf1" name="Default Changelist" comment="" />
+    <list default="true" id="ce94ce40-467e-4329-8b85-543112987bf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/AuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/constant/AuthConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/constant/InfoConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/AuthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/BasicAuthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/exception/UserOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/init/InitUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/security/jwt/JWTProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/src/main/java/common/CommonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/src/main/java/common/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/src/main/java/common/exception/TokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserCommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/AuthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-service/src/main/java/geek/GeekApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/GeekApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/GeekApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/controller/AsyncController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/controller/TaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/controller/TestSessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/controller/UserTaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/entity/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/entity/ResponseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/entity/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/entity/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/filer/InterceptorConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/filer/LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/filer/TokenInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/mapper/TaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/mapper/UserTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/redis/RedisClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/redis/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/AsyncService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/UserTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/UserTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/impl/AsyncServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/impl/TaskServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/service/impl/UserTaskServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geek/util/CookieUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jwt.properties" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/resources/jwt.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/User.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/task.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/taskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/userTaskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/usertask.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/GeekApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/controller/AsyncController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/controller/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/controller/TestSessionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/controller/UserTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/entity/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/entity/ResponseResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/entity/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/entity/UserTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/filer/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/mapper/TaskMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/mapper/UserTaskMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/redis/RedisClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/redis/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/AsyncService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/TaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/UserTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/impl/AsyncServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/impl/TaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/service/impl/UserTaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/geek/util/CookieUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jwt.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/User.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/task.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/taskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/userTaskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/usertask.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/geek-service/target/" />
+    <ignored path="$PROJECT_DIR$/geek-auth-service/target/" />
+    <ignored path="$PROJECT_DIR$/geek-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/geek-task-service/target/" />
+    <ignored path="$PROJECT_DIR$/geek-common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1300412092">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.41" value="2" />
-          <entry key="project.open.time.45" value="3" />
-          <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="21" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="27" />
-          <entry key="html" value="17" />
-          <entry key="java" value="10737" />
-          <entry key="properties" value="244" />
-          <entry key="sql" value="49" />
-          <entry key="xml" value="638" />
-          <entry key="yaml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="17" />
-          <entry key="JAVA" value="10737" />
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Properties" value="244" />
-          <entry key="SQL" value="67" />
-          <entry key="XML" value="620" />
-          <entry key="YAML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="LICENSE" value="1" />
-          <entry key="MF" value="3" />
-          <entry key="NOTICE" value="1" />
-          <entry key="class" value="4" />
-          <entry key="dtd" value="1" />
-          <entry key="factories" value="2" />
-          <entry key="html" value="3" />
-          <entry key="java" value="165" />
-          <entry key="json" value="1" />
-          <entry key="properties" value="16" />
-          <entry key="provides" value="1" />
-          <entry key="sql" value="14" />
-          <entry key="xml" value="21" />
-          <entry key="yaml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="DTD" value="1" />
-          <entry key="HTML" value="3" />
-          <entry key="JAVA" value="165" />
-          <entry key="JSON" value="1" />
-          <entry key="Manifest" value="3" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="16" />
-          <entry key="SQL" value="14" />
-          <entry key="XML" value="21" />
-          <entry key="YAML" value="1" />
-          <entry key="spring.factories" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/GeekApplication.java">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="55">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#0#50#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/TaskService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/GeekApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
                 <element signature="e#592#593#0" expanded="true" />
                 <element signature="e#652#653#0" expanded="true" />
               </folding>
@@ -106,86 +239,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jwt.properties">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="88">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/filer/InterceptorConfig.java">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="211">
               <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/config/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="19" column="78" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/redis/RedisClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/redis/RedisConfig.java">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="150">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserCommentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/TaskService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/util/CookieUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="210">
+              <caret line="7" column="61" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,8 +286,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -206,70 +297,70 @@
     <findStrings>
       <find>--------</find>
       <find>RedisClient</find>
+      <find>saveUser</find>
+      <find>com.geek.</find>
+      <find>com.geek-auth</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/task.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/repo/TaskMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/userTaskMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/repo/UserTaskMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/ResponseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/ResponseREsult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/UserTaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/impl/UserTaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/repo/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/mapper/TaskMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/impl/TaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/User.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/usertask.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/ResponseResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/util/CookieUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/AsyncService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/service/impl/AsyncServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/filer/TokenInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/filer/InterceptorConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/config/CrossDomain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/TaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/filer/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/userMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/taskMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/TestSessionController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.gtml.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/util/JwtUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jwt.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/JwtInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/JwtController/JwtInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/config/JwtConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/entity/jwt/JwtInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/GeekApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/filer/JwtAuthorizeFilter.java" />
+        <option value="$PROJECT_DIR$/geek-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/all.sql" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTFilter.java" />
+        <option value="$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTUtil.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/controller/AsyncController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/UserTaskService.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/UserService.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/impl/UserTaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/mapper/UserTaskMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/controller/TestSessionController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/geek/controller/UserTaskController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../spring-boot-exercise/springboot-jpa/src/main/java/hello/util/JwtUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/TaMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/AsyncController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/controller/UserTaskController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geek/redis/RedisClient.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/mybatis/taskMapper.xml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/mybatis/userTaskMapper.xml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/mybatis/userMapper.xml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/mapper/UserTaskMapper.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/User.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/pom.xml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/mybatis/all.sql" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/Task.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserCommentRepository.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/entity/User.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/entity/User.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/geek-common/pom.xml" />
+        <option value="$PROJECT_DIR$/geek-auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -280,145 +371,25 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="com.geek.service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="-13" />
-    <option name="width" value="1130" />
-    <option name="height" value="765" />
+    <option name="x" value="2" />
+    <option name="y" value="291" />
+    <option name="width" value="1939" />
+    <option name="height" value="1103" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="filer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,20 +398,26 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555338250550" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jwt-spring-security-demo" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/geek-task-service/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\idea\GeekService\src\main\resources\static" />
+      <recent name="G:\github\GeekService\GeekService\geek-task-service\src\main\resources" />
+      <recent name="G:\github\GeekService\GeekService\geek-task-service\src\main\java" />
+      <recent name="G:\github\GeekService\GeekService\geek-user-service\src\main\resources" />
+      <recent name="G:\github\GeekService\GeekService\geek-user-service\src\main\java" />
+      <recent name="G:\github\GeekService\GeekService\geek-auth-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\idea\GeekService\src\main\resources\templates" />
@@ -461,19 +438,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GeekApplication">
-    <configuration name="TaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geek.TaMain" />
-      <module name="GeekService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geek.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="GeekApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="GeekService" />
@@ -488,14 +510,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GeekApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="geek-task-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.geek.GeekApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="geek-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker-161">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.geekservice: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="geekservice" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="geekService" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="geek-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Unnamed" />
+      <item itemvalue="Docker.geekService" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yaml.geekservice: Compose Deployment" />
       <item itemvalue="Spring Boot.GeekApplication" />
-      <item itemvalue="Application.TaMain" />
+      <item itemvalue="Spring Boot.GeekApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Spring Boot.GeekApplication (1)" />
         <item itemvalue="Spring Boot.GeekApplication" />
-        <item itemvalue="Application.TaMain" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.geekservice: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -530,11 +619,24 @@
       <workItem from="1554958013501" duration="232000" />
       <workItem from="1555335742253" duration="1851000" />
       <workItem from="1555339960187" duration="1463000" />
+      <workItem from="1555896323430" duration="181000" />
+      <workItem from="1555896696413" duration="29000" />
+      <workItem from="1556070875964" duration="76000" />
+      <workItem from="1556074533814" duration="22000" />
+      <workItem from="1557644354858" duration="70000" />
+      <workItem from="1557644563914" duration="74000" />
+      <workItem from="1557645550890" duration="448000" />
+      <workItem from="1557646023401" duration="163000" />
+      <workItem from="1557646207907" duration="80000" />
+      <workItem from="1557646311920" duration="3476000" />
+      <workItem from="1557662926135" duration="2136000" />
+      <workItem from="1557665865281" duration="1992000" />
+      <workItem from="1557667929347" duration="7359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111826000" />
+    <option name="totallyTimeSpent" value="127932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,9 +648,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23793566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -557,8 +659,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21967213" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32808024" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41501418" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34392112" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,356 +671,427 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.5140772" />
+      <window_info anchor="bottom" id="Docker" order="13" visible="true" weight="0.37393767" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.5410765" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.48441926" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.0102803735" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.21782842" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE.jar!/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE-sources.jar!/org/springframework/core/annotation/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/org/apache/catalina/filters/CorsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/config/CrossDomain.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/cache/Cache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47415">
-          <caret line="1718" column="19" selection-start-line="1718" selection-start-column="19" selection-end-line="1718" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/task.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/taskMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/userTaskMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="270">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/UserTaskServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="169">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/config/JwtConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/../spring-boot-exercise/springboot-jpa/src/main/java/hello/util/JwtUtil.java">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-exercise/springboot-jpa/src/main/java/hello/filter/JwtAuthorizeFilter.java" />
-    <entry file="file://$PROJECT_DIR$/../spring-boot-exercise/springboot-jpa/src/main/java/hello/entity/jwt/JwtInfo.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="63">
+          <caret line="244" column="44" selection-start-line="244" selection-start-column="44" selection-end-line="244" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-boot-exercise/springboot-jpa/src/main/java/hello/controller/JwtController/JwtInfoController.java">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/jwt.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/javax/servlet/http/HttpServletResponse.class">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/AsyncService.java">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="9" />
+        <state relative-caret-position="306">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/User.sql">
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/TokenService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/dto/AuthDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/AuthDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/BasicAuthDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/dto/TokenDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/security/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/AuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/impl/AsyncServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/CommonApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="21" column="41" selection-start-line="18" selection-start-column="38" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/userMapper.xml">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/TaMain.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/controller/TestSessionController.java">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/jwt/JWTUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="-1440">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/controller/TaskController.java">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/exception/BaseException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/controller/AsyncController.java">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/exception/TokenException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1092">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/controller/UserTaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/entity/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/entity/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/entity/UserTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/filer/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/filer/TokenInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/mapper/UserTaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/mapper/TaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/GeekApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="180">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/UserTaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserCommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/GeekApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
             <element signature="e#592#593#0" expanded="true" />
             <element signature="e#652#653#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jwt.properties">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/filer/InterceptorConfig.java">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="19" column="78" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/redis/RedisClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="55">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#50#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/redis/RedisConfig.java">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="253">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geek/util/CookieUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="270">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -974,7 +1147,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>GeekService</last-edited>
+          <last-edited>geek-user-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

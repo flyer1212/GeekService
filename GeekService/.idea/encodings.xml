@@ -2,5 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geek-auth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geek-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geek-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geek-task-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geek-user-service" charset="UTF-8" />
   </component>
 </project>

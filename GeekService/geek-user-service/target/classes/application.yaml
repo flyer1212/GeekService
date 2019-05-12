@@ -1,0 +1,10 @@
+server:
+  port: 18001
+spring:
+  application:
+    name: ts-user-service
+  data:
+    mongodb:
+      host: ts-user-service
+      database: ts
+      port: 27017

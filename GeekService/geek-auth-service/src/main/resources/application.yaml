@@ -1,0 +1,11 @@
+server:
+  port: 18000
+spring:
+  application:
+    name: ts-auth-service
+  data:
+    mongodb:
+      host: ts-auth-mongo
+      database: ts
+      port: 27017
+
