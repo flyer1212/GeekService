@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
@@ -13,8 +14,9 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "UserCommentTask")
-public class UserCommentTask {
+public class UserCommentTask implements Serializable {
 
+    private static final long serialVersionUID = -4304389230803478681L;
     @Id
     @Column(name = "commitId")
     @GeneratedValue(generator = "IdStrategy")

@@ -2,7 +2,8 @@ package auth.service;
 
 import auth.dto.BasicAuthDto;
 import auth.dto.TokenDto;
+import common.util.Response;
 
 public interface TokenService {
-    TokenDto getToken(BasicAuthDto dto);
+    Response getToken(BasicAuthDto dto);
 }

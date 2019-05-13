@@ -26,25 +26,25 @@ public class InitUser implements CommandLineRunner {
         User whetherExistUser = userRepository.findByUsername("user").orElse(new User());
         if (whetherExistUser.getUsername() == null) {
             User user = User.builder()
-                    .userId(UUID.randomUUID())
+                    .userId(UUID.fromString("4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"))
                     .username("user")
-                    .password(passwordEncoder.encode("1234"))
+                    .password(passwordEncoder.encode("123456"))
                     .roles(new HashSet<>(Arrays.asList("ROLE_USER")))
                     .build();
 
             userRepository.save(user);
         }
 
-        User whetherExistAdmin = userRepository.findByUsername("user").orElse(new User());
-        if (whetherExistAdmin.getUsername() == null) {
-            User admin = User.builder()
-                    .userId(UUID.randomUUID())
-                    .username("admin")
-                    .password(passwordEncoder.encode("222222"))
-                    .roles(new HashSet<>(Arrays.asList("ROLE_ADMIN")))
-                    .build();
-
-            userRepository.save(admin);
-        }
+//        User whetherExistAdmin = userRepository.findByUsername("user").orElse(new User());
+//        if (whetherExistAdmin.getUsername() == null) {
+//            User admin = User.builder()
+//                    .userId(UUID.randomUUID())
+//                    .username("admin")
+//                    .password(passwordEncoder.encode("222222"))
+//                    .roles(new HashSet<>(Arrays.asList("ROLE_ADMIN")))
+//                    .build();
+//
+//            userRepository.save(admin);
+//        }
     }
 }

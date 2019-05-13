@@ -2,16 +2,17 @@ package auth.service;
 
 import auth.dto.AuthDto;
 import auth.entity.User;
+import common.util.Response;
 
 import java.util.List;
 
 public interface UserService {
 
-    User saveUser(User user);
+    Response saveUser(User user);
 
-    List<User> getAllUser();
+    Response getAllUser();
 
 
-    User createDefaultAuthUser(AuthDto dto);
+    Response createDefaultAuthUser(AuthDto dto);
 
 }

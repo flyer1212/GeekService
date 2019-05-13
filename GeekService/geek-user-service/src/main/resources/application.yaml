@@ -2,9 +2,9 @@ server:
   port: 18001
 spring:
   application:
-    name: ts-user-service
+    name: geek-user-service
   data:
     mongodb:
-      host: ts-user-service
-      database: ts
+      host: 10.141.211.161
+      database: geek-user-service
       port: 27017

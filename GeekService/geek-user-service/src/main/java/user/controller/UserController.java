@@ -1,5 +1,6 @@
 package user.controller;
 
+import common.util.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,8 @@ import user.entity.User;
 import user.service.UserService;
 
 import java.util.List;
+
+import static org.springframework.http.ResponseEntity.ok;
 
 
 @RestController
@@ -24,17 +27,17 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<List<User>> getAllUser() {
-        return ResponseEntity.ok(userService.getAllUsers());
+    public ResponseEntity<Response> getAllUser() {
+        return ok(userService.getAllUsers());
     }
 
     @GetMapping("/{userName}")
-    public Object getUserByUserName(@PathVariable String userName) {
-        return userService.findByUserName(userName);
+    public ResponseEntity getUserByUserName(@PathVariable String userName) {
+        return ok(userService.findByUserName(userName));
     }
 
     @PostMapping("/register")
-    public ResponseEntity<User> registerUser(@RequestBody UserDto userDto) {
+    public ResponseEntity<Response> registerUser(@RequestBody UserDto userDto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.saveUser(userDto));
     }
 

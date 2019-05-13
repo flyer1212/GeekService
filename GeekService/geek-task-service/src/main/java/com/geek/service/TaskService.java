@@ -3,15 +3,17 @@ package com.geek.service;
 
 
 import com.geek.entity.UserTask;
+import common.util.Response;
 import org.apache.catalina.User;
 
 import java.util.List;
 
 public interface TaskService {
 
-    List<UserTask> findByUserId(String userId);
+    Response findByUserId(String userId);
 
-    List<UserTask> getAllTask();
-    int addTask(UserTask task);
+    Response getAllTask();
+
+    Response addTask(UserTask task);
 
 }

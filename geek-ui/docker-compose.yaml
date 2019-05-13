@@ -1,0 +1,15 @@
+version: '3'
+services:
+  geek-ui-dashboard:
+    build: geek-ui-dashboard
+    image: liuzozo/geek-ui-dashboard
+    restart: always
+    ports:
+      - 80:8080
+    networks:
+      - my-network
+
+networks:
+    my-network:
+      # driver: overlay
+      driver: bridge

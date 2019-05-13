@@ -1,5 +1,6 @@
 package user.service.impl;
 
+import common.util.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -25,8 +26,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+    final String USER_AUTH_SERVICE = "http://localhost:18000/user/auth";
 
-    public User saveUser(UserDto userDto) {
+    public Response saveUser(UserDto userDto) {
         log.info("Save User Name id：" + userDto.getUserName());
         User user = User.builder()
                 .userId(UUID.randomUUID())
@@ -47,11 +49,21 @@ public class UserServiceImpl implements UserService {
             log.info("Send authorization message to ts-auth-service....");
             createDefaultAuthUser(AuthDto.builder().userId(user.getUserId())
                     .userName(user.getUserName())
-                    .password(user.getPassword()).build());
-            return userSaveResult;
+                    .password(user.getPassword())
+                    .build());
+            return new Response(1, "REGISTER SUCCESS", userSaveResult);
         } else {
-            return null;
+            return new Response(0, "USER ALREADY EXISTS", null);
         }
+    }
+
+    public Response getAllUsers() {
+        return new Response(1, "SUCCESS", userRepository.findAll());
+    }
+
+
+    public Response findByUserName(String userName) {
+        return new Response(1, "Success", userRepository.findByUserName(userName));
     }
 
     private void createDefaultAuthUser(AuthDto dto) {
@@ -59,20 +71,10 @@ public class UserServiceImpl implements UserService {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<AuthDto> httpEntity = new HttpEntity<AuthDto>(dto, httpHeaders);
-        restTemplate.exchange("http://localhost:18000/user/auth",
+        restTemplate.exchange(USER_AUTH_SERVICE,
                 HttpMethod.POST,
                 httpEntity,
                 Void.class);
-    }
-
-
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
-    }
-
-
-    public User findByUserName(String userName) {
-        return userRepository.findByUserName(userName);
     }
 
 

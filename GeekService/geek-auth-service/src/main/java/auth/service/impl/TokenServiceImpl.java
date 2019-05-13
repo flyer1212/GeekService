@@ -8,6 +8,8 @@ import auth.exception.UserOperationException;
 import auth.repository.UserRepository;
 import auth.security.jwt.JWTProvider;
 import auth.service.TokenService;
+import common.util.Response;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Service;
 import java.text.MessageFormat;
 
 @Service
+@Slf4j
 public class TokenServiceImpl implements TokenService {
 
     @Autowired
@@ -28,20 +31,21 @@ public class TokenServiceImpl implements TokenService {
     private AuthenticationManager authenticationManager;
 
 
-
     @Override
-    public TokenDto getToken(BasicAuthDto dto) {
+    public Response getToken(BasicAuthDto dto) {
         String username = dto.getUsername();
         String password = dto.getPassword();
+        log.info(username + "___" + password);
         // verify username and password
-        UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(username, password);
-        authenticationManager.authenticate(upat);
+//        UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(username, password);
+//        authenticationManager.authenticate(upat);
 
         User user = this.userRepository.findByUsername(username)
                 .orElseThrow(() -> new UserOperationException(MessageFormat.format(
                         InfoConstant.USER_NAME_NOT_FOUND_1, username
                 )));
+        log.info(user.toString());
         String token = jwtProvider.createToken(user);
-        return new TokenDto(username, token);
+        return new Response(1, "GET TOKEN SUCCESS", new TokenDto(user.getUserId() + "", username, token));
     }
 }

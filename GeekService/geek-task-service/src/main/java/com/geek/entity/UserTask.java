@@ -7,6 +7,7 @@ import lombok.extern.apachecommons.CommonsLog;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
@@ -14,14 +15,15 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "UserTask")
-public class UserTask {
+public class UserTask implements Serializable {
+
+    private static final long serialVersionUID = -2475842737089120820L;
 
     @Id
     @Column(name = "taskId")
+    @GeneratedValue(generator = "IdStrategy")
+    @GenericGenerator(name = "IdStrategy", strategy = "assigned")
     private String taskId;
-//    @GeneratedValue(generator  = "IdStrategy")
-//    @GenericGenerator(name = "IdStrategy", strategy = "assigned")
-
 
     @Column(name = "userId")
     private String userId;  // 创建者

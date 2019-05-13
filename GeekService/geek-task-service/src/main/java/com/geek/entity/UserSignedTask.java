@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
@@ -13,8 +14,10 @@ import java.util.Date;
 @NoArgsConstructor
 @Entity
 @Table(name = "UserSignedTask")
-public class UserSignedTask {
+public class UserSignedTask implements Serializable {
 
+
+    private static final long serialVersionUID = 7432028413928815673L;
 
     @Id
     @Column(name = "signedId")

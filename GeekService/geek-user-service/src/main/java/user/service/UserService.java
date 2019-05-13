@@ -1,5 +1,6 @@
 package user.service;
 
+import common.util.Response;
 import user.dto.UserDto;
 import user.entity.User;
 
@@ -7,9 +8,9 @@ import java.util.List;
 
 
 public interface UserService {
-    User saveUser(UserDto user);
+    Response saveUser(UserDto user);
 
-    List<User> getAllUsers();
+    Response getAllUsers();
 
-    User findByUserName(String userName);
+    Response findByUserName(String userName);
 }

@@ -3,6 +3,7 @@ package auth.controller;
 import auth.dto.BasicAuthDto;
 import auth.dto.TokenDto;
 import auth.service.TokenService;
+import common.util.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +19,7 @@ public class AuthController {
     private TokenService tokenService;
 
     @PostMapping("/login")
-    public ResponseEntity<TokenDto> getToken(@RequestBody BasicAuthDto dao) {
+    public ResponseEntity<Response> getToken(@RequestBody BasicAuthDto dao) {
         return ResponseEntity.ok(tokenService.getToken(dao));
     }
 }

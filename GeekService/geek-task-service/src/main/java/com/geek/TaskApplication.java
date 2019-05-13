@@ -12,8 +12,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @ServletComponentScan
 @EnableAsync
-public class GeekApplication {
+public class TaskApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GeekApplication.class);
+        SpringApplication.run(TaskApplication.class);
     }
 }

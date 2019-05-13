@@ -1,12 +1,40 @@
 version: '3'
 services:
 
-  geekservice:
-    build: com.geek-service
-    image: com.geek/com.geek-service
+  geek-auth-service:
+    build: geek-auth-service
+    image: geek/geek-auth-service
     restart: always
     ports:
-      - 12111:12111
+      - 18000:18000
+    networks:
+      - geek-network
+
+  geek-auth-mongo:
+    image: mongo
+    networks:
+      - geek-network
+
+  geek-user-service:
+    build: geek-user-service
+    image: geek/geek-user-service
+    restart: always
+    ports:
+      - 18001:18001
+    networks:
+      - geek-network
+
+  geek-user-mongo:
+    image: mongo
+    networks:
+      - geek-network
+
+  geek-task-service:
+    build: geek-task-service
+    image: geek/geek-task-service
+    restart: always
+    ports:
+      - 18002:18002
     networks:
       - geek-network
 

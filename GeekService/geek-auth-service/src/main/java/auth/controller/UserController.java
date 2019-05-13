@@ -3,6 +3,7 @@ package auth.controller;
 import auth.dto.AuthDto;
 import auth.entity.User;
 import auth.service.UserService;
+import common.util.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<List<User>> getAllUser() {
+    public ResponseEntity<Response> getAllUser() {
         return ResponseEntity.ok().body(userService.getAllUser());
     }
 

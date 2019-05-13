@@ -2,10 +2,10 @@ server:
   port: 18000
 spring:
   application:
-    name: ts-auth-service
+    name: geek-auth-service
   data:
     mongodb:
-      host: ts-auth-mongo
-      database: ts
+      host: 10.141.211.161
+      database: geek-auth-service
       port: 27017
 

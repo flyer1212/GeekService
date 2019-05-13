@@ -7,6 +7,7 @@ import auth.entity.User;
 import auth.exception.UserOperationException;
 import auth.repository.UserRepository;
 import auth.service.UserService;
+import common.util.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -29,13 +30,13 @@ public class UserServiceImpl implements UserService {
     protected PasswordEncoder passwordEncoder;
 
     @Override
-    public User saveUser(User user) {
+    public Response saveUser(User user) {
         return null;
     }
 
     @Override
-    public List<User> getAllUser() {
-        return userRepository.findAll();
+    public Response getAllUser() {
+        return new Response(1, "SUCCESS", userRepository.findAll());
     }
 
     /**
@@ -45,7 +46,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public User createDefaultAuthUser(AuthDto dto) {
+    public Response createDefaultAuthUser(AuthDto dto) {
         log.info("Register User Info is:  " + dto.getUserName());
         User user = User.builder()
                 .userId(dto.getUserId())
@@ -55,7 +56,7 @@ public class UserServiceImpl implements UserService {
                 .build();
 
         checkUserCreateInfo(user);
-        return userRepository.save(user);
+        return new Response(1, "Success", userRepository.save(user));
     }
 
 

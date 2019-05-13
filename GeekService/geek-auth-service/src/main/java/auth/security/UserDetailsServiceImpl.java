@@ -20,11 +20,12 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        log.info("UsernamePasswordAuthenticationToken  username :" + s);
+        log.info("UsernamePasswordAuthenticationToken  username :" + s );
         UserDetails userDetails = userRepository.findByUsername(s)
                 .orElseThrow(() -> new UsernameNotFoundException(
                         MessageFormat.format(InfoConstant.USER_NAME_NOT_FOUND_1, s)
                 ));
+        log.info(userDetails.getUsername() + userDetails.getPassword() );
         return userDetails;
     }
 }
