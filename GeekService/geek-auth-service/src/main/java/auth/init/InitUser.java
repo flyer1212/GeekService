@@ -23,12 +23,12 @@ public class InitUser implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        User whetherExistUser = userRepository.findByUsername("user").orElse(new User());
+        User whetherExistUser = userRepository.findByUsername("user123").orElse(new User());
         if (whetherExistUser.getUsername() == null) {
             User user = User.builder()
-                    .userId(UUID.fromString("4d2a46c7-71cb-4cf1-b5bb-b68406d9da6f"))
-                    .username("user")
-                    .password(passwordEncoder.encode("123456"))
+                    .userId(UUID.fromString("4d2a46c7-71c4-4cf1-b5bb-b68406d9da6f"))
+                    .username("user123")
+                    .password(passwordEncoder.encode("111111"))
                     .roles(new HashSet<>(Arrays.asList("ROLE_USER")))
                     .build();
 

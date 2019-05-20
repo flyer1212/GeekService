@@ -37,9 +37,10 @@ public class TokenServiceImpl implements TokenService {
         String password = dto.getPassword();
         log.info(username + "___" + password);
         // verify username and password
-//        UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(username, password);
-//        authenticationManager.authenticate(upat);
+        UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(username, password);
+        authenticationManager.authenticate(upat);
 
+        log.info("verify  success");
         User user = this.userRepository.findByUsername(username)
                 .orElseThrow(() -> new UserOperationException(MessageFormat.format(
                         InfoConstant.USER_NAME_NOT_FOUND_1, username

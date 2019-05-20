@@ -55,7 +55,21 @@
                 <task-item :taskItem="taskItem"></task-item>
               </span>
             </div>
+
+            <!-- 分页 -->
+            <el-pagination
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page.sync="pages.currentPage"
+            :page-size="pages.size"
+            layout="total, prev, pager, next"
+            :total="pages.itemNum">
+          </el-pagination>
+
           </div>
+
+         
+    
         </el-col>
 
         <el-col :xs="0" :sm="1" :md="2" :lg="3">
@@ -89,6 +103,12 @@ export default {
       showTaskItem: true,
       showAccountInfo: false,
       taskList: [],
+      currentPage1: 5,
+      pages: {
+        size: 1,
+        itemNum: 1,
+        currentPage: 1
+      },
       typeOptions: [
         {
           value: "team",
@@ -126,29 +146,38 @@ export default {
         }
       ],
       stateValue: "",
-      typeValue:"",
+      typeValue: "",
       input5: ""
     };
+  },
+  methods: {
+    handleSizeChange(val) {
+      console.log(`每页 ${val} 条`);
+    },
+    handleCurrentChange(val) {
+      console.log(`当前页: ${val}`);
+    }
   },
   mounted() {
     console.log("mounted");
     let that = this;
-    // token=1qfhiowrs1q7dj54d9lvvdfiodrtnnh5
-  //  var token = document.cookie.split("=")[1];
 
     $.ajax({
       type: "get",
       url: "http://localhost:18002/task",
       contentType: "application/json",
       dataType: "json",
+      headers: { Authorization: "Bearer " + that.$store.state.token },
       success: function(result) {
         console.log(result);
         if (result.status == 1) {
           that.taskList = result.data;
+          console.log(result.data.length)
+          that.pages.itemNum = result.data.length;
+        
         }
       }
     });
-
   }
 };
 </script>
@@ -163,9 +192,10 @@ export default {
   color: #333;
   text-align: center;
   z-index: 0;
-  height: 600px;
+  height: 100%;
   padding-top: 75px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .el-col {
   border-radius: 4px;

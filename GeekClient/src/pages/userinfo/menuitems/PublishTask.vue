@@ -139,6 +139,8 @@ export default {
         url: "http://localhost:18002/task",
         contentType: "application/json",
         dataType: "json",
+        headers: { Authorization: "Bearer " + that.$store.state.token },
+        withCredentials: true,
         data: newTask,
         success: function(result) {
           console.log(result);
@@ -151,6 +153,9 @@ export default {
           } else {
             that.$message.error("信息有误！");
           }
+        },
+        error: function(XMLHttpResponse, textStatus, errorThrown) {
+          that.$message.error(textStatus + " : " + XMLHttpResponse.message);
         }
       });
     },

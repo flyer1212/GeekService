@@ -26,7 +26,7 @@ public class User implements UserDetails {
 
     private String password;
 
-    private String lastLoginTime;
+//    private String lastLoginTime;
 
     private Set<String> roles = new HashSet<>();
 
