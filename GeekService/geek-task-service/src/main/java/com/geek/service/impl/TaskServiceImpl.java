@@ -29,4 +29,9 @@ public class TaskServiceImpl implements TaskService {
     public Response addTask(UserTask task) {
         return new Response(1, "Success", taskRepository.save(task));
     }
+
+    @Override
+    public Response findTaskByTaskId(String taskId) {
+        return new Response(1, "Success", taskRepository.findById(taskId));
+    }
 }

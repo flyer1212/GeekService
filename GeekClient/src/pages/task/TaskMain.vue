@@ -51,7 +51,7 @@
 
             <div class="task_body">
               <!-- 中间任务部分 -->
-              <span v-for="taskItem in taskList">
+              <span v-for="taskItem in showTaskList">
                 <task-item :taskItem="taskItem"></task-item>
               </span>
             </div>
@@ -90,7 +90,7 @@ import AppHeader from "@/pages/header/Header";
 
 import AppFooter from "@/pages/footer/Footer";
 import TaskItem from "@/pages/task/components/TaskItem";
-
+import { requestURLs } from "@/util/uril_utils";
 export default {
   components: {
     AppHeader,
@@ -103,6 +103,7 @@ export default {
       showTaskItem: true,
       showAccountInfo: false,
       taskList: [],
+      showTaskList: [],
       currentPage1: 5,
       pages: {
         size: 1,
@@ -111,42 +112,42 @@ export default {
       },
       typeOptions: [
         {
-          value: "team",
+          value: "1",
           label: "开发团队招募"
         },
         {
-          value: "development",
+          value: "2",
           label: "开发任务"
         },
         {
-          value: "knowledge",
+          value: "3",
           label: "知识交流"
         },
         {
-          value: "homeTeacher",
+          value: "4",
           label: "家教"
         },
         {
-          value: "other",
+          value: "5",
           label: "其他"
         }
       ],
       stateOptions: [
         {
-          value: "all",
+          value: "1",
           label: "全部状态"
         },
         {
-          value: "ing",
+          value: "2",
           label: "招募中"
         },
         {
-          value: "end",
+          value: "3",
           label: "截止报名"
         }
       ],
-      stateValue: "",
-      typeValue: "",
+      stateValue: "2",
+      typeValue: "1",
       input5: ""
     };
   },
@@ -158,13 +159,27 @@ export default {
       console.log(`当前页: ${val}`);
     }
   },
+  watch: {
+    typeValue(newVal, oldVal) {
+      console.log("changed ");
+      var tempIndex = 0;
+      this.showTaskList = [];
+      for (var i = 0; i < this.taskList.length; i++) {
+        if (this.taskList[i].taskType == newVal) {
+          this.showTaskList[tempIndex] = this.taskList[i];
+          tempIndex++;
+        }
+      }
+      this.pages.itemNum = this.showTaskList.length;
+    }
+  },
   mounted() {
-    console.log("mounted");
+    console.log("task main mounted" + requestURLs[0].value);
     let that = this;
 
     $.ajax({
       type: "get",
-      url: "http://localhost:18002/task",
+      url: requestURLs[0].value,
       contentType: "application/json",
       dataType: "json",
       headers: { Authorization: "Bearer " + that.$store.state.token },
@@ -172,9 +187,18 @@ export default {
         console.log(result);
         if (result.status == 1) {
           that.taskList = result.data;
-          console.log(result.data.length)
-          that.pages.itemNum = result.data.length;
-        
+          console.log(result.data.length);
+          that.showTaskList = that.taskList;
+          // 分页
+          that.pages.itemNum = that.showTaskList.length;
+        }
+      },
+      error: function(e) {
+        console.log(e);
+        var message = e.statusText;
+
+        if (message.indexOf("error") != -1) {
+          alert("Token is expired! please login first!");
         }
       }
     });

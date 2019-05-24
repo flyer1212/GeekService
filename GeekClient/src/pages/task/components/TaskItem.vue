@@ -8,22 +8,22 @@
               src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
               class="user-icon-small"
             >
-            {{taskItem.userId}}
+            {{taskItem.userName}}
             <img src="/static/img/male.png" class="sex-icon">
           </router-link>
         </span>
         <span class="light-color">
           |
-          <time>2 天前</time> 发布
+          <time> {{sumbitTime(taskItem.taskSubmitTime)}}</time> 发布
           <span>
-            <el-tag size="small">{{stateOptions[taskItem.taskState].label}}</el-tag>
+            <el-tag size="small">{{stateOptions[taskItem.taskState -1].label}}</el-tag>
           </span>
         </span>
       </el-col>
     </el-row>
     <el-row>
       <el-col :xs="24" class="task-link-col">
-        <router-link to="/app/task_detail" style="text-decoration: none;">
+        <router-link :to="{path:'/app/task_detail', query:{taskId:JSON.stringify(taskItem.taskId)}}" style="text-decoration: none;">
           <span class="task-link">{{taskItem.taskTitle}}</span>
         </router-link>
       </el-col>
@@ -33,16 +33,16 @@
         <div class="task-detal-item">
           <span class="light-color">类型:</span>
           <span>
-            <el-tag size="small">{{typeOptions[taskItem.taskType].label}}</el-tag>
+            <el-tag size="small">{{typeOptions[taskItem.taskType-1].label}}</el-tag>
           </span>
         </div>
 
         <div class="task-detal-item">
           <span class="light-color">报名截止:</span>
           <span>
-            <time class="light-value-color">10</time>
+            <time class="light-value-color">{{calculateEndDay(taskItem.taskEndTime)}}</time>
           </span>
-          <span>天之内</span>
+          <!-- <span>天之内</span> -->
         </div>
 
         <div class="task-detal-item">
@@ -95,13 +95,90 @@ export default {
         {
           value: "end",
           label: "截止报名"
+        },
+        {
+          value: "other",
+          label: "未知状态"
         }
       ]
     };
   },
-  mounted () { 
-      console.log(this.taskItem)
+  methods: {
+    initDateTime() {
+      this.taskItem.taskSubmitTime = this.sumbitTime(
+        this.taskItem.taskSubmitTime
+      );
+
+      this.taskItem.taskEndTime = this.calculateEndDay(
+        this.taskItem.taskEndTime
+      );
+    },
+    sumbitTime(submitDate) {
+      var submitDay = new Date(submitDate);
+      // 2014-06-05  计算发布到现在的时间差
+      var times =
+        submitDay.getFullYear() +
+        "-" +
+        (submitDay.getMonth() + 1) +
+        "-" +
+        submitDay.getDate() +
+        " " +
+        submitDay.getHours() +
+        ":" +
+        submitDay.getMinutes() +
+        ":" +
+        submitDay.getSeconds();
+      var nowTime = Date.parse(new Date());
+      var submitTime = Date.parse(times);
+      var day = parseInt((nowTime - submitTime) / (1000 * 60 * 60 * 24));
+      var hours = parseInt((nowTime - submitTime) / (1000 * 60 * 60));
+      var minutes = parseInt((nowTime - submitTime) / (1000 * 60));
+      console.log(day + "-" + hours + "-" + minutes)
+      if (day > 0) {
+        return day + "天前";
+      } else if (day < 1 && hours > 0) {
+        return hours + "小时前";
+      } else {
+        return minutes + "分钟前";
+      }
+    },
+    calculateEndDay(endDate) {
+      var endDay = new Date(endDate);
+      var endTimes =
+        endDay.getFullYear() +
+        "-" +
+        (endDay.getMonth() + 1) +
+        "-" +
+        endDay.getDate() +
+        " " +
+        endDay.getHours() +
+        ":" +
+        endDay.getMinutes() +
+        ":" +
+        endDay.getSeconds();
+      var nowTime = Date.parse(new Date());
+      var endTimes = Date.parse(endTimes);
+      var day = parseInt((endTimes - nowTime) / (1000 * 60 * 60 * 24));
+      var hours = parseInt((endTimes - nowTime) / (1000 * 60 * 60));
+      var minutes = parseInt((endTimes - nowTime) / (1000 * 60));
+      console.log(day + "-" + hours + "-" + minutes)
+      if (day > 0) {
+        return day + "天之内";
+      } else if (day < 1 && hours > 0) {
+        return hours + "小时内";
+      } else {
+        return minutes + "分钟内";
+      }
+    }
+  },
+  created () {
+    console.log("item created")
   }
+  // ,
+  // mounted() {
+  //   console.log(this.taskItem);
+  //   this.initDateTime();
+  // }
 };
 </script>
 

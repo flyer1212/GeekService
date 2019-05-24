@@ -26,7 +26,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    final String USER_AUTH_SERVICE = "http://localhost:18000/user/auth";
+   // final String USER_AUTH_SERVICE = "http://localhost:18000/user/auth";
+
+    final String USER_AUTH_SERVICE = "http://geek-auth-service:18000/user/auth";
 
     public Response saveUser(UserDto userDto) {
         log.info("Save User Name id：" + userDto.getUserName());

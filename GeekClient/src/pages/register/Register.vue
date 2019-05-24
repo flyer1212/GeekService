@@ -98,6 +98,8 @@ import AppHeader from "@/pages/header/Header";
 
 import AppFooter from "@/pages/footer/Footer";
 
+import { requestURLs } from "@/util/uril_utils";
+
 export default {
   components: {
     AppHeader,
@@ -120,7 +122,7 @@ export default {
 
       axios({
         method: "post",
-        url: "http://localhost:8083/user/register",
+        url: requestURLs[3].value,
         data: {
           qqNumber: this.qqNumber,
           password: this.password

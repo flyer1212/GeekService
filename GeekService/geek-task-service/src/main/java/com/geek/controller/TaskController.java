@@ -32,6 +32,11 @@ public class TaskController {
         return ok(taskService.addTask(userTask));
     }
 
+    @GetMapping("/task/{taskId}")
+    public ResponseEntity findByTaskId(@PathVariable String taskId) {
+        return ok(taskService.findTaskByTaskId(taskId));
+    }
+
     @GetMapping("/{userId}")
     public ResponseEntity findByUserId(@PathVariable String userId) {
         return ok(taskService.findByUserId(userId));

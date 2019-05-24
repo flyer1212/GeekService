@@ -28,11 +28,19 @@ public class UserTask implements Serializable {
     @Column(name = "userId")
     private String userId;  // 创建者
 
+    @Column(name = "userName")
+    private String userName;  // 创建者
+
     @Column(name = "taskTitle")
     private String taskTitle;
 
+    // 1开发团队 2 开发任务 3 知识交流 4 家教 5 其它
     @Column(name = "taskType")
     private String taskType;
+
+    // 1. 全部状态 2 招募中 3 报名截止
+    @Column(name = "taskState")
+    private Integer taskState;
 
     @Column(name = "taskRequire")
     private String taskRequire;
@@ -43,8 +51,7 @@ public class UserTask implements Serializable {
     @Column(name = "reward")
     private Integer reward;
 
-    @Column(name = "taskState")
-    private Integer taskState;
+
 
     @Column(name = "taskEndTime")
     private Date taskEndTime;

@@ -4,10 +4,10 @@ spring:
   application:
     name: geek-task-service
   datasource:
-    url: jdbc:mysql://localhost:3306/geek?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://geek-task-mysql:3306/geek?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
   jpa:
     hibernate:
       ddl-auto: update

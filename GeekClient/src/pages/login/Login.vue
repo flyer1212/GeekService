@@ -84,6 +84,8 @@ import AppHeader from "@/pages/header/Header";
 
 import AppFooter from "@/pages/footer/Footer";
 
+import { requestURLs } from "@/util/uril_utils";
+
 export default {
   components: {
     AppHeader,
@@ -106,7 +108,7 @@ export default {
       var data = JSON.stringify(loginInfo);
       $.ajax({
         type: "post",
-        url: "http://localhost:18000/auth/login",
+        url: requestURLs[2].value,
         contentType: "application/json",
         dataType: "json",
         data: data,

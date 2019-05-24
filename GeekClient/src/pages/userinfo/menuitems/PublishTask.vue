@@ -68,6 +68,8 @@
 <script>
 import axios from "axios";
 
+import { requestURLs } from "@/util/uril_utils";
+
 export default {
   name: "PublishTask",
   data() {
@@ -123,12 +125,13 @@ export default {
       let newTask = JSON.stringify({
         taskId: that.guuid(),
         userId: that.$store.state.userId,
+        userName: that.$store.state.userName,
         taskTitle: this.taskTitle,
         taskType: this.taskType,
         taskRequire: this.taskRequire,
         taskDescribe: this.taskDescribe,
         reward: this.reward,
-        taskState: 0,
+        taskState: 2,
         taskEndTime: this.taskEndTime,
         taskSubmitTime: new Date().getTime()
       });
@@ -136,7 +139,7 @@ export default {
 
       $.ajax({
         type: "post",
-        url: "http://localhost:18002/task",
+        url: requestURLs[0].value,
         contentType: "application/json",
         dataType: "json",
         headers: { Authorization: "Bearer " + that.$store.state.token },

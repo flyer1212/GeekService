@@ -11,7 +11,9 @@
         <!-- 中间白色部分 -->
         <el-col :xs="24" :sm="22" :md="20" :lg="18">
           <!-- 用户自己报名与否 -->
-          <div class="grid-content bg-purple-middle">
+
+
+          <div class="grid-content bg-purple-middle" v-if="signedTask != ''">
             <el-row class="myreport_info">
               <el-col>
                 <p>
@@ -24,7 +26,7 @@
                 </p>
               </el-col>
               <el-col>
-                <p>2019-03-09 12:42</p>
+                <p>{{signedTask.submitTime}}</p>
               </el-col>
               <el-col>
                 <p>
@@ -32,15 +34,17 @@
                 </p>
               </el-col>
               <el-col>
-                <p>熟悉爬虫，写过类似的爬虫代码，和发右键通知的代码</p>
+                <p>{{signedTask.reason}}</p>
               </el-col>
             </el-row>
           </div>
+
+
           <!-- 任务详细信息 -->
           <div class="grid-content bg-purple-middle">
             <el-row>
               <el-col>
-                <span style="font-weight: bold; font-size: 18px;">招聘信息的网上抓取</span>
+                <span style="font-weight: bold; font-size: 18px;">{{taskItem.taskTitle}}</span>
               </el-col>
             </el-row>
 
@@ -52,15 +56,15 @@
                       src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
                       class="user-icon-small"
                     >
-                    鲁达师
+                     {{taskItem.userName}}
                     <img src="/static/img/male.png" class="sex-icon">
                   </router-link>
                 </span>
                 <span class="light-color">
                   |
-                  <time>2 天前</time> 发布
+                  <time>{{beginDate(taskItem.taskSubmitTime)}}</time> 发布
                   <span>
-                    <el-tag size="small">招募中</el-tag>
+                    <el-tag size="small">{{states(taskItem.taskState-1)}}</el-tag>
                   </span>
                 </span>
               </el-col>
@@ -71,14 +75,14 @@
                 <div class="task-detal-item">
                   <span class="light-color">类型:</span>
                   <span>
-                    <el-tag size="small">开发团队招募</el-tag>
+                    <el-tag size="small">{{types(taskItem.taskType)}}</el-tag>
                   </span>
                 </div>
 
                 <div class="task-detal-item">
                   <span class="light-color">报名截止:</span>
                   <span>
-                    <time class="light-value-color">10</time>
+                    <time class="light-value-color">{{endDate(taskItem.taskEndTime)}}</time>
                   </span>
                   <span>天之内</span>
                 </div>
@@ -89,7 +93,8 @@
                 </div>
                 <div class="task-detal-item">
                   <span class="light-color" style="margin-top: -10px;">
-                    <el-button size="small" type="warning">退出</el-button>
+                    <el-button size="small" type="warning" v-if="signedTask == ''"  @click="open_sign_dialog(taskItem.taskId)">我要报名</el-button>
+                    <el-button size="small" type="warning" v-if="signedTask != ''" >退出</el-button>
                   </span>
                 </div>
               </el-col>
@@ -102,10 +107,7 @@
             <el-row>
               <el-col>
                 <pre>
-1、抓取网上的招聘信息，按照规定的类型；
-2、按照邮件列表给人员发送邮件。
-暂时只有这两个需求。
-联系xgoshawk@163.com
+{{taskItem.taskDescribe}}
                 </pre>
               </el-col>
             </el-row>
@@ -114,12 +116,16 @@
               <el-col>报名要求</el-col>
             </el-row>
 
+           <el-row>
+              <el-col>  {{taskItem.taskRequire}}</el-col>
+            </el-row>
+            
             <el-row>
               <el-col>奖励</el-col>
             </el-row>
 
             <el-row>
-              <el-col>800</el-col>
+              <el-col>  {{taskItem.reward}} ￥</el-col>
             </el-row>
           </div>
           <!-- 评论区 -->
@@ -160,7 +166,7 @@
                   <el-table-column prop="sex" label="性别"></el-table-column>
                   <el-table-column prop="special" label="专业"></el-table-column>
                 
-                  <el-table-column prop="phone" label="联系方式"></el-table-column>
+                  <el-table-column prop="phone"  label="联系方式"></el-table-column>
                   <el-table-column prop="reason" label="报名理由"></el-table-column>
                 </el-table>
               </el-col>
@@ -184,6 +190,10 @@ import AppHeader from "@/pages/header/Header";
 
 import AppFooter from "@/pages/footer/Footer";
 
+import { sumbitTime, calculateEndDay, hello } from "@/util/date_utils";
+import { typeOptions, stateOptions } from "@/util/consts_utils";
+import { requestURLs } from "@/util/uril_utils";
+
 export default {
   components: {
     AppHeader,
@@ -192,8 +202,11 @@ export default {
   name: "TaskDetail",
   data() {
     return {
+      taskId: JSON.parse(this.$route.query.taskId),
+      taskItem: "",
       showTaskItem: true,
       showAccountInfo: false,
+      signedTask: "", // 以报名的任务,报完名后立即更新
       options1: [
         {
           value: "选项1",
@@ -223,7 +236,112 @@ export default {
   methods: {
     indexMethod(index) {
       return index * 2;
+    },
+    beginDate(date) {
+      return sumbitTime(date);
+    },
+    endDate(date) {
+      return calculateEndDay(date);
+    },
+    types(index) {
+      if (Number.isNaN(Number(index))) {
+        index = 1;
+        console.log(index + "-==");
+      }
+      return typeOptions[index].label;
+    },
+    states(index) {
+      if (Number.isNaN(Number(index))) {
+        index = 1;
+      }
+      return stateOptions[index].label;
+    },
+    open_sign_dialog(taskId) {
+      this.$prompt("请输入报名理由", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        inputPattern: /\S/,
+        inputErrorMessage: "请输入报名理由"
+      })
+        .then(({ value }) => {
+          // 提交报名信息
+          this.sumbitSignedReason(taskId, value);
+        })
+        .catch(() => {
+          this.$message({
+            type: "info",
+            message: "取消输入"
+          });
+        });
+    },
+    sumbitSignedReason(taskId, reason) {
+      let that = this;
+
+      let submitSignedTask = JSON.stringify({
+        userId: that.$store.state.userId,
+        taskId: taskId,
+        reason: reason,
+        submitTime: new Date().getTime()
+      });
+      console.log(submitSignedTask);
+
+      $.ajax({
+        type: "post",
+        url: requestURLs[4].value,
+        contentType: "application/json",
+        dataType: "json",
+        headers: { Authorization: "Bearer " + that.$store.state.token },
+        withCredentials: true,
+        data: submitSignedTask,
+        success: function(result) {
+          console.log(result);
+          if (result.status == 1) {
+            that.signedTask = JSON.parse(submitSignedTask);
+            that.$message({
+              showClose: true,
+              message: "报名成功!",
+              type: "success"
+            });
+          } else {
+            that.$message.error("信息有误！");
+          }
+        },
+        error: function(XMLHttpResponse, textStatus, errorThrown) {
+          that.signedTask = JSON.parse(submitSignedTask);
+          console.log(that.signedTask.reason)
+          that.$message.error(textStatus + " : " + XMLHttpResponse.message);
+        }
+      });
     }
+  },
+  mounted: function() {
+    console.log("TaskDetail : " + this.taskId);
+    var that = this;
+    // 查询任务详情信息
+    $.ajax({
+      type: "get",
+      url: requestURLs[1].value + this.taskId,
+      contentType: "application/json",
+      dataType: "json",
+      headers: { Authorization: "Bearer " + that.$store.state.token },
+      success: function(result) {
+        console.log(result);
+        if (result.status == 1) {
+          that.taskItem = result.data;
+          console.log(result.data);
+        }
+      },
+      error: function(e) {
+        console.log(e);
+        var message = e.statusText;
+        if (message.indexOf("error") != -1) {
+          alert("Token is expired! please login first!");
+        }
+      }
+    });
+    // 根据taskId 和userid 查询用户是否报名
+
+    //
   }
 };
 </script>
@@ -238,9 +356,8 @@ export default {
   color: #333;
   text-align: center;
   z-index: 0;
-  height: 600px;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 .el-col {
   border-radius: 4px;

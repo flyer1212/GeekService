@@ -1,7 +1,7 @@
 version: '3'
 services:
   geek-ui-dashboard:
-    build: geek-ui-dashboard
+    build: ""
     image: liuzozo/geek-ui-dashboard
     restart: always
     ports:

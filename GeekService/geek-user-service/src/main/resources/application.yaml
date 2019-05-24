@@ -5,6 +5,6 @@ spring:
     name: geek-user-service
   data:
     mongodb:
-      host: 10.141.211.161
-      database: geek-user-service
+      host: geek-user-mongo
+      database: geek-user
       port: 27017

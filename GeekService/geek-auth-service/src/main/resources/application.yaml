@@ -5,7 +5,7 @@ spring:
     name: geek-auth-service
   data:
     mongodb:
-      host: 10.141.211.161
-      database: geek-auth-service
+      host: geek-auth-mongo
+      database: geek-auth
       port: 27017
 

@@ -4,9 +4,6 @@ package com.geek.service;
 
 import com.geek.entity.UserTask;
 import common.util.Response;
-import org.apache.catalina.User;
-
-import java.util.List;
 
 public interface TaskService {
 
@@ -15,5 +12,7 @@ public interface TaskService {
     Response getAllTask();
 
     Response addTask(UserTask task);
+
+    Response findTaskByTaskId(String taskId);
 
 }
