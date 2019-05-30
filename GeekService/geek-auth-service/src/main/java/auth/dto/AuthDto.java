@@ -16,7 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class AuthDto {
 
-    private UUID userId;
+    private String userId;
     private String userName;
     private String password;
 }

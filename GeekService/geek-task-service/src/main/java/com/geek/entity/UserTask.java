@@ -51,8 +51,6 @@ public class UserTask implements Serializable {
     @Column(name = "reward")
     private Integer reward;
 
-
-
     @Column(name = "taskEndTime")
     private Date taskEndTime;
 

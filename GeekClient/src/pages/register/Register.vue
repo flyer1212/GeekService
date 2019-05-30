@@ -129,7 +129,7 @@ export default {
         }
       }).then(function(response) {
         console.log(response.data.statusCode);
-        if (response.data.statusCode == true) {
+        if (response.data.status == 1) {
           that.$store.commit('changeQqNumber', that.qqNumber)
           that.$store.commit('changePassword', that.password)
           that.openLoginDialog();

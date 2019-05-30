@@ -161,9 +161,8 @@ export default {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-  height: 600px;
   padding-top: 75px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 .el-col {
   border-radius: 4px;

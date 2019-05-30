@@ -2,11 +2,7 @@
   <el-row class="user_info_container">
     <el-row class="header-row">
       <el-col :xs="12" :sm="13" class="header-img">
-        <img
-          data-v-798ac6b6
-          src="https://fdugeek.com/media/user_18212010064/icons/default_icon"
-          class="user-icon"
-        >
+        <img data-v-798ac6b6 src="/static/img/groom.png" class="user-icon" >
       </el-col>
       <el-col :xs="12" :sm="11" class="image-upload">
         <!-- <el-button type="primary" style="float: left;" size="small" plain>上传图片</el-button> -->
@@ -104,6 +100,7 @@ export default {
   padding: 20px 20px;
   color: #727f8e;
 }
+ 
 .header-row el-col {
   height: 100%;
   display: block;

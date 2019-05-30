@@ -9,8 +9,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Response {
+public class Response<T> {
     Integer status; // 1 true, 0 false
     String msg;
-    Object data;
+    T data;
 }

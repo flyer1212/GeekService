@@ -4,10 +4,7 @@
       <el-col class="header" :xs="24">
         <span class="user-info-span">
           <router-link to="/app/account_public_detail">
-            <img
-              src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
-              class="user-icon-small"
-            >
+            <img  src="/static/img/mans.png" class="user-icon-small">
             {{taskItem.userName}}
             <img src="/static/img/male.png" class="sex-icon">
           </router-link>
@@ -133,7 +130,7 @@ export default {
       var day = parseInt((nowTime - submitTime) / (1000 * 60 * 60 * 24));
       var hours = parseInt((nowTime - submitTime) / (1000 * 60 * 60));
       var minutes = parseInt((nowTime - submitTime) / (1000 * 60));
-      console.log(day + "-" + hours + "-" + minutes)
+      console.log(day + "-" + hours + "-" + minutes);
       if (day > 0) {
         return day + "天前";
       } else if (day < 1 && hours > 0) {
@@ -161,7 +158,7 @@ export default {
       var day = parseInt((endTimes - nowTime) / (1000 * 60 * 60 * 24));
       var hours = parseInt((endTimes - nowTime) / (1000 * 60 * 60));
       var minutes = parseInt((endTimes - nowTime) / (1000 * 60));
-      console.log(day + "-" + hours + "-" + minutes)
+      console.log(day + "-" + hours + "-" + minutes);
       if (day > 0) {
         return day + "天之内";
       } else if (day < 1 && hours > 0) {
@@ -171,8 +168,8 @@ export default {
       }
     }
   },
-  created () {
-    console.log("item created")
+  created() {
+    console.log("item created");
   }
   // ,
   // mounted() {

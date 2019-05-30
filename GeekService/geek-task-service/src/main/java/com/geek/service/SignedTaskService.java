@@ -10,8 +10,8 @@ public interface SignedTaskService {
 
     Response findSignedTaskByUserIdAndTaskId(String userId, String taskId);
 
+    Response findSignedUserByTaskId(String taskId);
+
     Response addSignedTask(UserSignedTask task);
-
-
 
 }

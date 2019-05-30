@@ -13,11 +13,7 @@
           <div class="grid-content bg-purple-middle">
             <el-row>
               <el-col :xs="24" :sm="12">
-                <img
-                  data-v-cfcb5864
-                  src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
-                  class="user-icon-large"
-                >
+               <img data-v-798ac6b6 src="/static/img/groom.png" class="user-icon" >
               </el-col>
               <el-col :xs="24" :sm="12">
                 <p align="left">学号：16300180042</p>

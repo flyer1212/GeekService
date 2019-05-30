@@ -20,11 +20,15 @@ services:
 
   geek-user-mongo:
     image: mongo
+    ports:
+      - 27019:27017
     networks:
       - geek-network
 
   geek-auth-mongo:
     image: mongo
+    ports:
+      - 27018:27017
     networks:
       - geek-network
 

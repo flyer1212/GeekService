@@ -28,8 +28,13 @@ public class SignedTaskController {
     }
 
     @GetMapping("/{userId}/{taskId}")
-    public ResponseEntity findSignedTaskByTaskAndUserId(@PathVariable String userId,@PathVariable String taskId) {
-        return ok(signedTaskService.findSignedTaskByUserIdAndTaskId(userId,taskId));
+    public ResponseEntity findSignedTaskByTaskAndUserId(@PathVariable String userId, @PathVariable String taskId) {
+        return ok(signedTaskService.findSignedTaskByUserIdAndTaskId(userId, taskId));
+    }
+
+    @GetMapping("/{taskId}")
+    public ResponseEntity findSignedUserByTaskId(@PathVariable String taskId) {
+        return ok(signedTaskService.findSignedUserByTaskId(taskId));
     }
 
 }

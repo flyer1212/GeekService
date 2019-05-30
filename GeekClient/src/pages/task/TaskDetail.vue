@@ -13,7 +13,7 @@
           <!-- 用户自己报名与否 -->
 
 
-          <div class="grid-content bg-purple-middle" v-if="signedTask != ''">
+          <div class="grid-content bg-purple-middle" v-if="signedTask.userId != null">
             <el-row class="myreport_info">
               <el-col>
                 <p>
@@ -52,10 +52,7 @@
               <el-col class="header" :xs="24">
                 <span class="user-info-span">
                   <router-link to="/account_public_detail">
-                    <img
-                      src="https://fdugeek.com/media/user_16300180042/icons/1551631562193_16ff6e825fc0b6170c3e27475fd79eee"
-                      class="user-icon-small"
-                    >
+                    <img src="/static/img/mans.png" class="user-icon-small">
                      {{taskItem.userName}}
                     <img src="/static/img/male.png" class="sex-icon">
                   </router-link>
@@ -89,12 +86,12 @@
 
                 <div class="task-detal-item">
                   <span class="light-color">报名人数:</span>
-                  <span class="light-value-color">0</span>
+                  <span class="light-value-color">{{signedTask?signedTask.signedPeopleNum:0}}</span>
                 </div>
                 <div class="task-detal-item">
                   <span class="light-color" style="margin-top: -10px;">
-                    <el-button size="small" type="warning" v-if="signedTask == ''"  @click="open_sign_dialog(taskItem.taskId)">我要报名</el-button>
-                    <el-button size="small" type="warning" v-if="signedTask != ''" >退出</el-button>
+                    <el-button size="small" type="warning" v-if="signedTask.userId == null"  @click="open_sign_dialog(taskItem.taskId)">我要报名</el-button>
+                    <el-button size="small" type="warning" v-if="signedTask.userId != null" >退出</el-button>
                   </span>
                 </div>
               </el-col>
@@ -154,19 +151,20 @@
             <el-row>
               <el-col>
                 报名人数:
-                <span>6</span>
+                <span>{{signedTask?signedTask.signedPeopleNum:0}}</span>   
               </el-col>
             </el-row>
             <el-row>
               <el-col>
+                
                 <el-table :data="tableData" style="width: 100%" empty-text="创建者可见">
                   <el-table-column type="index" :index="indexMethod"></el-table-column>
-                  <el-table-column prop="date" label="报名时间" width="180"></el-table-column>
-                  <el-table-column prop="name" label="姓名"></el-table-column>
+                  <el-table-column prop="taskSubmitTime" label="报名时间" width="180"></el-table-column>
+                  <el-table-column prop="userName" label="姓名"></el-table-column>
                   <el-table-column prop="sex" label="性别"></el-table-column>
-                  <el-table-column prop="special" label="专业"></el-table-column>
+                  <el-table-column prop="major" label="专业"></el-table-column>
                 
-                  <el-table-column prop="phone"  label="联系方式"></el-table-column>
+                  <el-table-column prop="qqNumber"  label="联系方式"></el-table-column>
                   <el-table-column prop="reason" label="报名理由"></el-table-column>
                 </el-table>
               </el-col>
@@ -222,13 +220,12 @@ export default {
       textarea: "",
       tableData: [
         {
-          date: "2016-05-02",
-          IDcard: "341225199012120111",
-          name: "王小虎",
+          taskSubmitTime: "2016-05-02",
+          userName: "王小虎",
           sex: "男",
-          special: "软件工程",
-          reason: "上海市普陀区金沙江路 1518 弄",
-          phone: 200333
+          major: "软件工程",
+          qqNumber: 200333,
+          reason: "上海市普陀区金沙江路 1518 弄"
         }
       ]
     };
@@ -297,6 +294,7 @@ export default {
           console.log(result);
           if (result.status == 1) {
             that.signedTask = JSON.parse(submitSignedTask);
+            that.getSignedUserInfo( that.$store.state.userId,taskId );
             that.$message({
               showClose: true,
               message: "报名成功!",
@@ -308,10 +306,65 @@ export default {
         },
         error: function(XMLHttpResponse, textStatus, errorThrown) {
           that.signedTask = JSON.parse(submitSignedTask);
-          console.log(that.signedTask.reason)
+          console.log(that.signedTask.reason);
           that.$message.error(textStatus + " : " + XMLHttpResponse.message);
         }
       });
+    },
+    // 得到当前用户是否报名
+    getSignedUserInfo(userId, taskId) {
+      // 查询本用户是否报名
+      var that = this;
+      $.ajax({
+        type: "get",
+        url: requestURLs[4].value + "/" + userId + "/" + taskId,
+        contentType: "application/json",
+        dataType: "json",
+        headers: { Authorization: "Bearer " + that.$store.state.token },
+        success: function(result) {
+          console.log(result + " signde info");
+          that.signedTask = result.data;
+        },
+        error: function(e) {
+          console.log(e);
+          var message = e.statusText;
+
+          if (message.indexOf("error") != -1) {
+            alert("Token is expired! please login first!");
+          }
+        }
+      });
+    },
+    // 得到所有报名的人
+    getAllSignedUserInfo(taskId, userId) {
+      if (userId != this.$store.state.userId) {
+        console.log("you have no premission!");
+        this.tableData = [];
+      } else {
+        console.log("check all signed my task people");
+
+        var that = this;
+        $.ajax({
+          type: "get",
+          url: requestURLs[4].value + "/" + taskId,
+          contentType: "application/json",
+          dataType: "json",
+          headers: { Authorization: "Bearer " + that.$store.state.token },
+          success: function(result) {
+            console.log(result + " signde info");
+            if (result.status == 1) {
+              that.tableData = result.data;
+            } else if (result.status == 0) {
+            }
+          },
+          error: function(e) {
+            var message = e.statusText;
+            if (message.indexOf("error") != -1) {
+              alert("Token is expired! please login first!");
+            }
+          }
+        });
+      }
     }
   },
   mounted: function() {
@@ -329,6 +382,14 @@ export default {
         if (result.status == 1) {
           that.taskItem = result.data;
           console.log(result.data);
+
+          // 根据taskId 和userid 查询用户是否报名
+          that.getSignedUserInfo(
+            that.$store.state.userId,
+            that.taskItem.taskId
+          );
+          //根据task 的 task id 和 user id 判断是否加载所有已经报名的人
+          that.getAllSignedUserInfo(that.taskItem.taskId, that.taskItem.userId);
         }
       },
       error: function(e) {
@@ -339,9 +400,6 @@ export default {
         }
       }
     });
-    // 根据taskId 和userid 查询用户是否报名
-
-    //
   }
 };
 </script>

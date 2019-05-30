@@ -5,7 +5,7 @@
       <div class="main_page">
         <el-row :gutter="10">
           <el-col :span="24">
-            <span style="color: #ffffff; font-size:40px;display:block; margin-top: 50px;">极客网</span>
+            <span style="color: #ffffff; font-size:40px;display:block; margin-top: 55px;">极客网</span>
           </el-col>
         </el-row>
 
@@ -19,7 +19,7 @@
 
         <el-row :gutter="10">
           <el-col :span="24">
-            <span style="color: #ffffff; font-size:20px;display:block; margin-top: 40px;">
+            <span style="color: #ffffff; font-size:20px;display:block; margin-top: 30px;">
               <router-link to="/app/user_info/publish-task">
                 <el-button type="primary" style="width: 200px;">发布需求</el-button>
               </router-link>
@@ -29,7 +29,7 @@
 
         <el-row :gutter="10">
           <el-col :span="24">
-            <span style="color: #ffffff; font-size:20px;display:block; margin-top: 20px;">
+            <span style="color: #ffffff; font-size:20px;display:block; margin-top: 15px;">
               <router-link to="/app/task_main">
                 <el-button style="background-color: transparent; width: 200px;" type="primary" plain>需求列表</el-button>
               </router-link>

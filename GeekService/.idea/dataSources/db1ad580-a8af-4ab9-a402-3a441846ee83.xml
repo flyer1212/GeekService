@@ -946,35 +946,37 @@
       <ColNames>commit_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="238" parent="230" name="signed_id">
+    <column id="238" parent="230" name="task_id">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="230" name="reason">
+    <column id="239" parent="230" name="user_id">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="230" name="submit_time">
+    <column id="240" parent="230" name="reason">
       <Position>3</Position>
-      <DataType>datetime(6)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="230" name="task_id">
+    <column id="241" parent="230" name="signed_people_num">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="230" name="user_id">
+    <column id="242" parent="230" name="submit_time">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>datetime(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="243" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>signed_id</ColNames>
+      <ColNames>task_id
+user_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="244" parent="231" name="task_id">
