@@ -1,0 +1,18 @@
+#不能用docker-compose
+version: '3'
+services:
+  jenkins:
+    image: jenkinsci/blueocean
+    container_name: jenkins
+    restart: always
+    user: root
+    ports:
+      - 7777:8080
+      - 7778:50000
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /var/jenkins_ssh:/root/.ssh
+      - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  geek-network:
+    driver: bridge

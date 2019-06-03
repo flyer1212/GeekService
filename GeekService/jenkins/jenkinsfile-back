@@ -1,0 +1,45 @@
+pipeline{
+  agent  {
+      docker {
+         image 'maven:3-alpine'
+         args '-v /root/.m2:/root/.m2'
+      }
+  }
+
+  stages{
+    stage("Clone"){
+      steps{
+        echo "=======  Clone code from github   ======="
+        git url: "https://github.com/cnych/jenkins-demo.git"
+        script {
+             build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
+        }
+      }
+    }
+
+    stage("Build"){
+      steps{
+        echo "======= build docker images ======="
+        echo "images tag is : ${build_tag}"
+
+        sh "docker build -t liuzozo/jenkins-demo-go-images:${build_tag} ."
+      }
+    }
+    stage("Push"){
+      steps{
+        echo "=======  push to docker hub registry   ======="
+      }
+    }
+    stage("Deploy"){
+      steps{
+        echo "=======  docker deploy service   ======="
+        sh "docker-compose up"
+     }
+    }
+    stage("Test"){
+      steps{
+        echo "=======   test deployed service   ======="
+     }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+#不能用docker-compose
+version: '3'
+services:
+  jenkins:
+    image: jenkinsci/blueocean
+    container_name: jenkins
+    restart: always
+    user: root
+    ports:
+      - 7777:8080
+      - 7778:50000
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /var/jenkins_ssh:/root/.ssh
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/jdk1.8.0_171/bin/java:/usr/bin/jdk1.8.0_171/java
+      - /usr/local/jdk1.8.0_171:/var/local/jdk1.8.0_171
+      - /usr/local/apache-maven-3.5.2:/usr/local/apache-maven-3.5.2
+#    command:
+#      - 'curl -L --fail https://github.com/docker/compose/releases/download/1.21.2/run.sh -o /usr/local/bin/docker-compose'
+#      - 'chmod +x /usr/local/bin/docker-compose'
+networks:
+  geek-network:
+    driver: bridge
