@@ -23,7 +23,7 @@ pipeline{
       steps{
         echo "======= mvn  clean package ======="
         sh "mvn -version"
-	echo "======= ok ======="
+	echo "======= ok 2 ======="
       }
     }
     stage("Build"){
