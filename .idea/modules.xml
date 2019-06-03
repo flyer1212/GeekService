@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GeekService.iml" filepath="$PROJECT_DIR$/.idea/GeekService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" filepath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-common/geek-common.iml" filepath="$PROJECT_DIR$/geek-common/geek-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-task-service/geek-task-service.iml" filepath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-user-service/geek-user-service.iml" filepath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" />
     </modules>
   </component>
 </project>
