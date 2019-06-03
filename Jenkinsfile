@@ -35,7 +35,7 @@ pipeline{
             sh "cd geek-auth-service/ && ls"
             sh "ls"
             sh "pwd"
-            sh "docker-compose build"
+            // sh "docker-compose build"
           }
     }
     stage("Push"){
