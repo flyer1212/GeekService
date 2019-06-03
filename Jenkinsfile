@@ -46,7 +46,7 @@ pipeline{
     stage("Deploy"){
       steps{
         echo "=======  docker deploy service   ======="
-        sh "docker-compose up"
+        sh "docker-compose up -d"
      }
     }
     stage("Test"){
