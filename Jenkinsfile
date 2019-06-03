@@ -32,7 +32,7 @@ pipeline{
             echo "=======  build docker images   ======="
             echo "images tag is : ${build_tag}"
             sh "ls"
-            sh "cd geek-auth-service"
+            sh "cd geek-auth-service/ && ls"
             sh "ls"
             sh "pwd"
             sh "docker-compose build"

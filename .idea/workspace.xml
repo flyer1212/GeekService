@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff12cf8-74d6-4727-88af-ea51d05c2c3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-common/target/classes/common/util/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-common/target/classes/common/util/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/META-INF/geek-task-service.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/entity/UserSignedTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/entity/UserSignedTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/entity/UserTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/entity/UserTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/repository/UserSignedRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/repository/UserSignedRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/target/classes/com/geek/service/UserTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkins/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkins/Dockerfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/geek-user-service/target/" />
     <ignored path="$PROJECT_DIR$/geek-common/target/" />
@@ -34,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state relative-caret-position="192">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -50,8 +41,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
+            <state relative-caret-position="1200">
               <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jenkins/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/AuthApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -94,15 +94,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-jenkins.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile.bak">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -119,6 +110,7 @@
         <option value="$PROJECT_DIR$/aa.yaml" />
         <option value="$PROJECT_DIR$/jenkins/deployment.md" />
         <option value="$PROJECT_DIR$/docker-compose-jenkins.yaml" />
+        <option value="$PROJECT_DIR$/jenkins/Dockerfile" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
@@ -160,8 +152,8 @@
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="303" />
-    <option name="y" value="167" />
+    <option name="x" value="-32" />
+    <option name="y" value="447" />
     <option name="width" value="2510" />
     <option name="height" value="980" />
   </component>
@@ -180,85 +172,7 @@
             <path>
               <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-ui-dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,15 +257,15 @@
       <option name="presentableId" value="Default" />
       <updated>1557665813224</updated>
       <workItem from="1557665814432" duration="47000" />
-      <workItem from="1559534757400" duration="8958000" />
+      <workItem from="1559534757400" duration="9671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9005000" />
+    <option name="totallyTimeSpent" value="9718000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="134" width="2008" height="784" extended-state="0" />
+    <frame x="-25" y="358" width="2008" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
@@ -367,7 +281,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34355828" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34662578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,13 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/docker-compose-jenkins.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -473,13 +380,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/Dockerfile">
@@ -505,14 +405,28 @@
     <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/AuthApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="192">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
