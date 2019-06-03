@@ -32,7 +32,7 @@ pipeline{
             echo "=======  build docker images   ======="
             echo "images tag is : ${build_tag}"
             sh "ls"
-            sh "docker-compose -f docker-compose.yaml  build"
+            sh "docker-compose  build"
           }
     }
     stage("Push"){
@@ -43,7 +43,7 @@ pipeline{
     stage("Deploy"){
       steps{
         echo "=======  docker deploy service   ======="
-        sh "docker-compose  -f docker-compose.yaml up"
+        sh "docker-compose up"
      }
     }
     stage("Test"){
