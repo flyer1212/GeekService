@@ -6,14 +6,14 @@ pipeline{
       steps{
         echo "=======  Clone code from github   ======="
         sh "git version"
-         git url: "git@github.com:liuZOZO/GeekService.git"
+         git url: "https://github.com/liuZOZO/GeekService.git"
          script {
               build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
          }
       }
     }
 
-    stage("MVN"){
+    stage("Mvn"){
       agent {
             docker {
                image 'maven:3-alpine'

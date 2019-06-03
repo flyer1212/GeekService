@@ -13,7 +13,8 @@ jenkins:myjenkins
 
  
 
-
+github2 geekk2 token
+8e1d5834c469bf4884a682051b9e89bc05603a73 
 
 
 docker run --name jenkins-dind3 --privileged -d -p 8081:8080 \
