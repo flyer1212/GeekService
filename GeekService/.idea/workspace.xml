@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce94ce40-467e-4329-8b85-543112987bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose-jenkins.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/deployment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/docker-compose-jenkins.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/jenkinsfile-back" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkins/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GeekClient/src/pages/header/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../GeekClient/src/pages/header/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy_readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/deploy_readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/geek-service/target/" />
@@ -94,11 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="300">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jenkins/jenkinsfile-back">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -140,11 +140,6 @@
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-deployment-service.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -268,11 +263,6 @@
             <path>
               <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -590,12 +580,12 @@
       <workItem from="1559231184344" duration="642000" />
       <workItem from="1559262722077" duration="642000" />
       <workItem from="1559449280213" duration="18774000" />
-      <workItem from="1559521083893" duration="7741000" />
+      <workItem from="1559521083893" duration="8555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223807000" />
+    <option name="totallyTimeSpent" value="224621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,13 +654,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1049,15 +1032,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/jenkinsfile-back">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
