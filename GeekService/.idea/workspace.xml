@@ -244,11 +244,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="97" />
-    <option name="y" value="-15" />
-    <option name="width" value="2244" />
-    <option name="height" value="978" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1911" />
+    <option name="y" value="225" />
+    <option name="width" value="1795" />
+    <option name="height" value="782" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -294,23 +294,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\github\GeekService\GeekService" />
-      <recent name="G:\github\GeekService\GeekService\geek-common\src\main\java\common" />
-      <recent name="G:\github\GeekService\GeekService\geek-user-service\src\main\java\user" />
-      <recent name="G:\github\GeekService\GeekService\geek-user-service" />
-      <recent name="G:\github\GeekService\GeekService\geek-task-service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.geek.Dto" />
-      <recent name="com.geek.config" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\github\GeekService\GeekService\jenkins" />
       <recent name="G:\github\GeekService\GeekService\img" />
       <recent name="G:\github\GeekService\GeekService\geek-ui-dashboard\static\static" />
       <recent name="G:\github\GeekService\GeekService\geek-ui-dashboard" />
       <recent name="G:\github\GeekService\GeekService" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geek.Dto" />
+      <recent name="com.geek.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\github\GeekService\GeekService" />
+      <recent name="G:\github\GeekService\GeekService\geek-common\src\main\java\common" />
+      <recent name="G:\github\GeekService\GeekService\geek-user-service\src\main\java\user" />
+      <recent name="G:\github\GeekService\GeekService\geek-user-service" />
+      <recent name="G:\github\GeekService\GeekService\geek-task-service" />
     </key>
   </component>
   <component name="RunDashboard">
