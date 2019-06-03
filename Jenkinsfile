@@ -33,7 +33,8 @@ pipeline{
             echo "images tag is : ${build_tag}"
             sh "ls"
             sh "pwd"
-            sh "docker-compose -f /var/jenkins_home/workspace/geek2_master/docker-compose.yaml  build"
+            sh "sudo i"
+            sh "docker-compose build"
           }
     }
     stage("Push"){
@@ -44,7 +45,7 @@ pipeline{
     stage("Deploy"){
       steps{
         echo "=======  docker deploy service   ======="
-        sh "docker-compose -f /var/jenkins_home/workspace/geek2_master/docker-compose.yaml up"
+        sh "docker-compose up"
      }
     }
     stage("Test"){

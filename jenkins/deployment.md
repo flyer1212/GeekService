@@ -18,7 +18,7 @@ docker run \
  
  # 需要安装docker-compose , docker exec -it id  /bin/bash
  # 可用的
- curl -L --fail https://github.com/docker/compose/releases/download/1.21.2/run.sh -o /usr/local/bin/docker-compose
+ curl -L --fail https://github.com/docker/compose/releases/download/1.25.0-rc1/run.sh -o /usr/local/bin/docker-compose
  chmod +x /usr/local/bin/docker-compose
  
  
