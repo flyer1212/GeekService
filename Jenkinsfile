@@ -22,6 +22,7 @@ pipeline{
       }
       steps{
         echo "======= mvn  clean package ======="
+        sh "ls"
         sh "mvn -version"
         sh "mvn clean package"
       }

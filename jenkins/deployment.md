@@ -1,6 +1,7 @@
 
 
 #  这个镜像可以docker info   但是不能docker-compose 
+ # 可用的
 docker pull jenkinsci/blueocean
 
 
@@ -16,6 +17,7 @@ docker run \
   
  
  # 需要安装docker-compose , docker exec -it id  /bin/bash
+ # 可用的
  curl -L --fail https://github.com/docker/compose/releases/download/1.21.2/run.sh -o /usr/local/bin/docker-compose
  chmod +x /usr/local/bin/docker-compose
  
