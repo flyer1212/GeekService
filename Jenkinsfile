@@ -6,7 +6,7 @@ pipeline{
       steps{
         echo "=======  Clone code from github   ======="
         sh "git version"
-         git url: "https://github.com/cnych/jenkins-demo.git"
+         git url: "https://github.com/liuZOZO/GeekService.git"
          script {
               build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
          }
@@ -23,11 +23,14 @@ pipeline{
       steps{
         echo "======= mvn  clean package ======="
         sh "mvn -version"
+        sh "mvn clean package"
       }
     }
     stage("Build"){
        steps{
             echo "=======  build docker images   ======="
+             echo "images tag is : ${build_tag}"
+             sh "docker-compose build"
           }
     }
     stage("Push"){
@@ -38,7 +41,7 @@ pipeline{
     stage("Deploy"){
       steps{
         echo "=======  docker deploy service   ======="
-
+        sh "docker-compose up"
      }
     }
     stage("Test"){
