@@ -32,6 +32,7 @@ pipeline{
             echo "=======  build docker images   ======="
             echo "images tag is : ${build_tag}"
             sh "ls"
+            sh "pwd"
             sh "docker-compose -f /var/jenkins_home/workspace/geek2_master/docker-compose.yaml  build"
           }
     }
