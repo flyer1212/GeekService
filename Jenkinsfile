@@ -33,7 +33,6 @@ pipeline{
             echo "images tag is : ${build_tag}"
             sh "ls"
             sh "pwd"
-            sh "sudo i"
             sh "docker-compose build"
           }
     }
