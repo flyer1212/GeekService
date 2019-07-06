@@ -13,5 +13,6 @@ Geek client ui and Server
 
 > ts-ui-dashboard 需要更改utils 里面的http路径
 
+> 
 docker run -p 8080:8080 -p 50000:50000  -v /home/jenkins-home-docker:/var/jenkins_home  jenkins/jenkins:lts
 
