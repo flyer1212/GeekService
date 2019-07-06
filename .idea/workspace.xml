@@ -2,347 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff12cf8-74d6-4727-88af-ea51d05c2c3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compse-readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/HttpAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/MockLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/HttpAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/MockLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/MockLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s-deployment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GeekService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeekService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-jenkins.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-jenkins.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-common/geek-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-common/geek-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-deployment-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-deployment-ui.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-ui.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-gateway.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/css/app.c732aeb5b4d1c393e89c9a32e61bb4ae.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/css/app.c732aeb5b4d1c393e89c9a32e61bb4ae.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/app.38a8b32eab82a0bec92a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/app.38a8b32eab82a0bec92a.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-user-service/target/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/auto.cnf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ca-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ca.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/client-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/client-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/db.opt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_comment_task.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_comment_task.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_signed_task.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_signed_task.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_task.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_task.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_buffer_pool" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_logfile0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_logfile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ibdata1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/ibtmp1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-mysql-outter.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.opt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/engine_cost.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/engine_cost.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/readme_temp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.CSM" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.CSV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/gtid_executed.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/gtid_executed.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_category.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_category.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_keyword.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_keyword.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_relation.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_relation.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_topic.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_topic.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_index_stats.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_index_stats.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_table_stats.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_table_stats.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/plugin.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/plugin.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/server_cost.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/server_cost.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/servers.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/servers.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_master_info.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_master_info.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_relay_log_info.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_relay_log_info.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_worker_info.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_worker_info.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.CSM" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.CSV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_leap_second.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_leap_second.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_name.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition_type.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.MYD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.MYI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/accounts.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/cond_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/db.opt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_current.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_history.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_history_long.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_account_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_host_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_thread_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_user_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_global_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_current.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_history.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_history_long.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_account_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_digest.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_host_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_program.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_thread_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_user_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_global_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_current.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_history.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_history_long.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_account_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_host_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_user_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_global_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_current.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_history.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_history_long.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_account_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_host_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_instance.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_thread_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_user_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_global_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_summary_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_summary_by_instance.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/global_status.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/global_variables.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/host_cache.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/hosts.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_account_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_host_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_thread_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_user_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_global_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/metadata_locks.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/mutex_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/objects_summary_global_by_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/performance_timers.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/prepared_statements_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_configuration.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status_by_coordinator.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status_by_worker.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_connection_configuration.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_connection_status.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_group_member_stats.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_group_members.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/rwlock_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_account_connect_attrs.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_connect_attrs.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_status.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_variables.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_actors.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_consumers.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_instruments.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_objects.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_timers.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_instances.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_summary_by_event_name.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_summary_by_instance.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_account.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_host.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_thread.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_user.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_handles.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_io_waits_summary_by_index_usage.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_io_waits_summary_by_table.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_lock_waits_summary_by_table.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/threads.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/user_variables_by_thread.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/users.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/variables_by_thread.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/private_key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/public_key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/server-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/server-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/db.opt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_file_io_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_stages.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_statement_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_statement_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_buffer_stats_by_schema.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_buffer_stats_by_table.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_lock_waits.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_by_thread_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_file_by_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_file_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_wait_by_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_wait_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/latest_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_host_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_thread_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_user_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_global_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_global_total.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/metrics.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/processlist.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/ps_check_lost_instrumentation.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_auto_increment_columns.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_index_statistics.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_object_overview.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_redundant_indexes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_lock_waits.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_statistics.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_statistics_with_buffer.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_tables_with_full_table_scans.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_unused_indexes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/session.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/session_ssl_status.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statement_analysis.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_errors_or_warnings.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_full_table_scans.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_sorting.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_temp_tables.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.TRG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.ibd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config_insert_set_user.TRN" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config_update_set_user.TRN" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_file_io_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_stages.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_statement_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_statement_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/version.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/wait_classes_global_by_avg_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/wait_classes_global_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_by_host_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_by_user_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_global_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_file_io_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_stages.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_statement_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_statement_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_buffer_stats_by_schema.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_buffer_stats_by_table.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_lock_waits.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_by_thread_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_file_by_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_file_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_wait_by_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_wait_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024latest_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_host_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_thread_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_user_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_global_by_current_bytes.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_global_total.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024processlist.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_digest_avg_latency_distribution.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_schema_table_statistics_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_flattened_keys.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_index_statistics.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_lock_waits.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_statistics.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_statistics_with_buffer.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_tables_with_full_table_scans.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024session.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statement_analysis.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_errors_or_warnings.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_full_table_scans.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_sorting.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_temp_tables.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_file_io.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_file_io_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_stages.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_statement_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_statement_type.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024wait_classes_global_by_avg_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024wait_classes_global_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_by_host_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_by_user_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_global_by_latency.frm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-mysql/mysql.conf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/geek-user-service/target/" />
     <ignored path="$PROJECT_DIR$/geek-common/target/" />
@@ -372,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="160">
+              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -383,6 +44,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
               <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -501,9 +171,9 @@
         <option value="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" />
         <option value="$PROJECT_DIR$/docker-compose-deploy/readme.md" />
         <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/docker-compose.yaml" />
         <option value="$PROJECT_DIR$/docker-compose-jenkins.yaml" />
         <option value="$PROJECT_DIR$/docker-compse-readme.md" />
+        <option value="$PROJECT_DIR$/docker-compose.yaml" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
@@ -692,12 +362,12 @@
       <workItem from="1561348425232" duration="3205000" />
       <workItem from="1561449937041" duration="2404000" />
       <workItem from="1561614727719" duration="2479000" />
-      <workItem from="1562390174849" duration="12727000" />
+      <workItem from="1562390174849" duration="13086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105465000" />
+    <option name="totallyTimeSpent" value="105824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="70" width="1471" height="859" extended-state="0" />
@@ -1011,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1062,10 +725,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="160">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
         </state>
       </provider>
     </entry>

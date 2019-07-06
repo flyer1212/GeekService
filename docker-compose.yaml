@@ -34,7 +34,7 @@ services:
 
   geek-ui-dashboard:
     build: geek-ui-dashboard
-    image: liuzozo/geek-ui-dashboard
+    image: 10.141.211.160:5000/geek/geek-ui-dashboard
     restart: always
     ports:
       - 80:8080
