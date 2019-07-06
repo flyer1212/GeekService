@@ -5,6 +5,7 @@ pipeline{
     stage("Clone"){
       steps{
         echo "=======  Clone code from github   ======="
+        sh "docker-compose down"
         sh "git version"
 	git url: "https://github.com/liuZOZO/GeekService.git"
         script {
@@ -43,7 +44,7 @@ pipeline{
     stage("Deploy"){
       steps{
         echo "=======  docker deploy service   ======="
-        sh "docker-compose up"
+        sh "docker-compose up -d"
      }
     }
     stage("Test"){
