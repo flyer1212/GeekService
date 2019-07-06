@@ -39,6 +39,11 @@ pipeline{
     stage("Push"){
       steps{
         echo "=======  push to docker hub registry   ======="
+        withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+           echo "${dockerHubUser} -p ${dockerHubPassword}"
+           sh "docker login -u ${dockerHubUser} -p ${dockerHubPassword}"
+
+        }
       }
     }
     stage("Deploy"){
