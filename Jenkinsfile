@@ -7,10 +7,12 @@ pipeline{
            echo "======  Clean last application ======"
            sh "docker-compose down"
            retry(3) {
+             sh 'chmod u+x ./test-deploy.sh'
              sh './test-deploy.sh'
            }
 
            timeout(time: 3, unit: 'MINUTES') {
+             sh 'chmod u+x ./jenkins-health-check.sh'
              sh './jenkins-health-check.sh'
            }
         }
