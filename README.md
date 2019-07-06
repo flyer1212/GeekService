@@ -9,7 +9,7 @@ Geek client ui and Server
 
 > 开发一定要先线下验证，然后再部署上线
   
-> 线下连接数据库，要但度部署数据库，
+> 线下连接数据库，要单独部署数据库，
 
 > ts-ui-dashboard 需要更改utils 里面的http路径
 
