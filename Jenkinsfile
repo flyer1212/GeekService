@@ -2,10 +2,22 @@ pipeline{
   agent any
 
   stages{
+    stage("Clean"){
+        steps{
+           echo "======  Clean last application ======"
+           sh "docker-compose down"
+           retry(3) {
+             sh './test-deploy.sh'
+           }
+
+           timeout(time: 3, unit: 'MINUTES') {
+             sh './jenkins-health-check.sh'
+           }
+        }
+    }
     stage("Clone"){
       steps{
         echo "=======  Clone code from github   ======="
-        sh "docker-compose down"
         sh "git version"
 	    git url: "git@github.com:liuZOZO/GeekService.git"
         script {
@@ -64,6 +76,17 @@ pipeline{
             sh "docker-compose down"
             echo "======  stop docker-compose success!  ======"
       }
+    }
+  }
+  post {
+    always {
+        echo '---- always ----'
+    }
+    success {
+        echo '---- success ----'
+    }
+    failure {
+       echo '---- failed ----'
     }
   }
 }
