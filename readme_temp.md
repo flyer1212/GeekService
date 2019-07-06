@@ -1,0 +1,1 @@
+docker images|grep eclipse |awk '{print $3 }'|xargs docker rmi

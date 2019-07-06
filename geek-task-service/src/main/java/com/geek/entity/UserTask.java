@@ -20,10 +20,14 @@ public class UserTask implements Serializable {
     private static final long serialVersionUID = -2475842737089120820L;
 
     @Id
-    @Column(name = "taskId")
+    @Column(name = "id")
     @GeneratedValue(generator = "IdStrategy")
-    @GenericGenerator(name = "IdStrategy", strategy = "assigned")
+    @GenericGenerator(name = "IdStrategy", strategy = "identity")
+    private int id;
+
+    @Column(name = "taskId")
     private String taskId;
+
 
     @Column(name = "userId")
     private String userId;  // 创建者

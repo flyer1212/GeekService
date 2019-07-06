@@ -107,7 +107,7 @@
 {{taskItem.taskDescribe}}
                 </pre>
               </el-col>
-            </el-row>
+            </el-row>/
 
             <el-row>
               <el-col>报名要求</el-col>
@@ -274,8 +274,10 @@ export default {
     sumbitSignedReason(taskId, reason) {
       let that = this;
 
+
       let submitSignedTask = JSON.stringify({
         userId: that.$store.state.userId,
+        signedId:that.guuid(),
         taskId: taskId,
         reason: reason,
         submitTime: new Date().getTime()
@@ -346,7 +348,7 @@ export default {
         var that = this;
         $.ajax({
           type: "get",
-          url: requestURLs[4].value + "/" + taskId,
+          url: requestURLs[4].value +"/"+ taskId,
           contentType: "application/json",
           dataType: "json",
           headers: { Authorization: "Bearer " + that.$store.state.token },
@@ -354,6 +356,7 @@ export default {
             console.log(result + " signde info");
             if (result.status == 1) {
               that.tableData = result.data;
+              console.log("3344343")
             } else if (result.status == 0) {
             }
           },
@@ -365,6 +368,15 @@ export default {
           }
         });
       }
+    },
+    guuid() {
+      return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(
+        c
+      ) {
+        var r = (Math.random() * 16) | 0,
+          v = c == "x" ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+      });
     }
   },
   mounted: function() {
@@ -380,8 +392,7 @@ export default {
       success: function(result) {
         console.log(result);
         if (result.status == 1) {
-          that.taskItem = result.data;
-          console.log(result.data);
+          that.taskItem = result.data[0];
 
           // 根据taskId 和userid 查询用户是否报名
           that.getSignedUserInfo(

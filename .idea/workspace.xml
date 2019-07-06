@@ -2,9 +2,347 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff12cf8-74d6-4727-88af-ea51d05c2c3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compse-readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/HttpAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/MockLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/HttpAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/MockLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/MockLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s-deployment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GeekService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GeekService.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-jenkins.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-jenkins.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-common/geek-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-common/geek-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-deployment-db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-deployment-ui.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-deployment-ui.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-gateway.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-gateway.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/css/app.c732aeb5b4d1c393e89c9a32e61bb4ae.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/css/app.c732aeb5b4d1c393e89c9a32e61bb4ae.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/app.38a8b32eab82a0bec92a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/app.38a8b32eab82a0bec92a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-user-service/target/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/auto.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ca-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ca.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/client-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/client-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_comment_task.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_comment_task.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_signed_task.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_signed_task.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_task.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/geek/user_task.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_buffer_pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_logfile0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ib_logfile1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ibdata1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/ibtmp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-mysql-outter.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/columns_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/engine_cost.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/engine_cost.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.MYD" beforeDir="false" afterPath="$PROJECT_DIR$/readme_temp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/event.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/func.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/general_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/gtid_executed.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/gtid_executed.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_category.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_category.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_keyword.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_keyword.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_relation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_relation.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_topic.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/help_topic.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_index_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/innodb_table_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/ndb_binlog_index.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/plugin.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/plugin.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proc.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/procs_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/proxies_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/server_cost.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/server_cost.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/servers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/servers.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_master_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_master_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_relay_log_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_relay_log_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_worker_info.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slave_worker_info.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/slow_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/tables_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_leap_second.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_leap_second.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_name.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/time_zone_transition_type.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.MYD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.MYI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/mysql/user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/accounts.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/cond_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_stages_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_digest.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_program.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_statements_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_transactions_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_current.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_history.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_history_long.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/events_waits_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_summary_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/file_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/global_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/global_variables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/host_cache.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/hosts.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_account_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_host_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_thread_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_by_user_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/memory_summary_global_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/metadata_locks.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/mutex_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/objects_summary_global_by_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/performance_timers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/prepared_statements_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_configuration.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status_by_coordinator.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_applier_status_by_worker.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_connection_configuration.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_connection_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_group_member_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/replication_group_members.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/rwlock_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_account_connect_attrs.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_connect_attrs.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/session_variables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_actors.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_consumers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_instruments.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_objects.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/setup_timers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_instances.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_summary_by_event_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/socket_summary_by_instance.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_account.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_host.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/status_by_user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_handles.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_io_waits_summary_by_index_usage.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_io_waits_summary_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/table_lock_waits_summary_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/threads.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/user_variables_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/users.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/performance_schema/variables_by_thread.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/private_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/public_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/server-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/server-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/metrics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/ps_check_lost_instrumentation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_auto_increment_columns.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_object_overview.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_redundant_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/schema_unused_indexes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/session_ssl_status.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.TRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config_insert_set_user.TRN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/sys_config_update_set_user.TRN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/version.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024host_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_buffer_stats_by_schema.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_buffer_stats_by_table.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024innodb_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_by_thread_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_file_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_file_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_wait_by_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024io_global_by_wait_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024latest_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_host_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_thread_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_by_user_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_global_by_current_bytes.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024memory_global_total.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024processlist.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_digest_95th_percentile_by_avg_us.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_digest_avg_latency_distribution.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024ps_schema_table_statistics_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_flattened_keys.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_index_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_lock_waits.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_statistics.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_table_statistics_with_buffer.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024schema_tables_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024session.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statement_analysis.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_errors_or_warnings.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_full_table_scans.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_runtimes_in_95th_percentile.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_sorting.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024statements_with_temp_tables.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_file_io.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_file_io_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_stages.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_statement_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024user_summary_by_statement_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024wait_classes_global_by_avg_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024wait_classes_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_by_host_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_by_user_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/data/sys/x@0024waits_global_by_latency.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-mysql/mysql.conf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/geek-user-service/target/" />
     <ignored path="$PROJECT_DIR$/geek-common/target/" />
@@ -23,41 +361,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jenkins/jenkinsfile-back">
+        <entry file="file://$PROJECT_DIR$/docker-compose-jenkins.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="133">
-                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="322">
+              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/img/readme.md">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-deployment-db.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compse-readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="228">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <first_editor relative-caret-position="445">
+                <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,64 +400,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/user_info.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/SignedTaskController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <entry file="file://$PROJECT_DIR$/jenkins/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="130">
+                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java">
+        <entry file="file://$PROJECT_DIR$/docker-compose-back.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#1041#1042#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/Dto/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/Dto/UserSignedInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="30" />
+            <state relative-caret-position="682">
+              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>geek-auth-service</find>
+      <find>geek-task-mysql</find>
+      <find>geek-task-service`</find>
+      <find>geek-task-service</find>
+      <find>geek-task-mysql`</find>
+      <find>findSignedByUserAndTaskId</find>
+      <find>Token is expired! please login first!</find>
+      <find>geek-user-service</find>
+      <find>[4].value</find>
+      <find>/</find>
+      <find>getAllSignedUserInfo</find>
+      <find>trace_status</find>
+      <find>RequestType</find>
+      <find>requestURLs</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,12 +461,50 @@
         <option value="$PROJECT_DIR$/jenkins/readme.md" />
         <option value="$PROJECT_DIR$/aa.yaml" />
         <option value="$PROJECT_DIR$/jenkins/deployment.md" />
-        <option value="$PROJECT_DIR$/docker-compose-jenkins.yaml" />
         <option value="$PROJECT_DIR$/jenkins/Dockerfile" />
-        <option value="$PROJECT_DIR$/geek-task-service/Dockerfile" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/img/readme.md" />
+        <option value="$PROJECT_DIR$/geek-common/src/main/java/common/config/MockLog.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/geek-common/src/main/java/common/config/HttpAspect.java" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/HttpAspect.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/MockLog.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/HttpAspect.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/MockLog.java" />
+        <option value="$PROJECT_DIR$/k8s.md" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/geek-gateway.yaml" />
+        <option value="$PROJECT_DIR$/docker-compose-mysql-outter.yaml" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserCommentTask.java" />
+        <option value="$PROJECT_DIR$/geek-deployment-db.yaml" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserTaskRepository.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/repository/UserSignedRepository.java" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/geek-user-service/Dockerfile" />
+        <option value="$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/geek-deployment-ui.yaml" />
+        <option value="$PROJECT_DIR$/geek-ui-dashboard/nginx.conf" />
+        <option value="$PROJECT_DIR$/k8s-deployment.md" />
+        <option value="$PROJECT_DIR$/geek-deployment-service.yaml" />
+        <option value="$PROJECT_DIR$/readme_temp.md" />
+        <option value="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" />
+        <option value="$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue" />
+        <option value="$PROJECT_DIR$/docker-compose-deploy/readme.md" />
+        <option value="$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/docker-compose-jenkins.yaml" />
+        <option value="$PROJECT_DIR$/docker-compse-readme.md" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -147,6 +513,11 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="E:/apache-maven-3.3.9" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -170,6 +541,15 @@
           <item name="geek-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="geek-user-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="geek-user-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -179,17 +559,16 @@
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="337" />
-    <option name="y" value="91" />
-    <option name="width" value="1935" />
-    <option name="height" value="965" />
+    <option name="x" value="21" />
+    <option name="y" value="87" />
+    <option name="width" value="1839" />
+    <option name="height" value="1074" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,116 +576,12 @@
               <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-task-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geek" type="462c0819:PsiDirectoryNode" />
-              <item name="Dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService-github" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService-github" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,13 +592,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/dailywork/myproject/log/logvisualization" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\github\GeekService-github" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\github\GeekService-github\geek-user-service\src\main\java\user\config" />
+      <recent name="G:\github\GeekService-github\geek-task-service\src\main\java\com\geek\config" />
+      <recent name="G:\github\GeekService-github\geek-auth-service\src\main\java\auth\config" />
       <recent name="G:\github\GeekService-github" />
     </key>
   </component>
@@ -339,7 +621,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="geek-auth-service" />
       <extension name="coverage">
@@ -366,6 +648,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="geek-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AuthApplication" />
@@ -386,18 +675,35 @@
       <workItem from="1557665814432" duration="47000" />
       <workItem from="1559534757400" duration="19189000" />
       <workItem from="1559569522933" duration="606000" />
-      <workItem from="1559974975045" duration="476000" />
+      <workItem from="1559974975045" duration="1807000" />
+      <workItem from="1560231255352" duration="83000" />
+      <workItem from="1560236089766" duration="463000" />
+      <workItem from="1560236575027" duration="425000" />
+      <workItem from="1560237022902" duration="560000" />
+      <workItem from="1560304402429" duration="25390000" />
+      <workItem from="1560386420598" duration="7828000" />
+      <workItem from="1560400586730" duration="9313000" />
+      <workItem from="1560504214642" duration="4974000" />
+      <workItem from="1560565351503" duration="9706000" />
+      <workItem from="1560607682177" duration="33000" />
+      <workItem from="1560851790052" duration="2960000" />
+      <workItem from="1561251404754" duration="1226000" />
+      <workItem from="1561334039367" duration="40000" />
+      <workItem from="1561348425232" duration="3205000" />
+      <workItem from="1561449937041" duration="2404000" />
+      <workItem from="1561614727719" duration="2479000" />
+      <workItem from="1562390174849" duration="12727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20318000" />
+    <option name="totallyTimeSpent" value="105465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="73" width="1548" height="772" extended-state="0" />
+    <frame x="17" y="70" width="1471" height="859" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19530201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2108988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,7 +713,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.106583074" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.10744986" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,7 +722,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.048143055" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3286119" />
@@ -425,240 +731,341 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.13624161" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.07714084" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GeekService/docker-compose.yaml" />
-    <entry file="file://$PROJECT_DIR$/geek-deployment-service.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aa.yaml" />
-    <entry file="file://$PROJECT_DIR$/geek-gateway.yaml">
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="236">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserSignedTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20" />
+        <state relative-caret-position="303">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="35" selection-end-column="26" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/TaskApplication.java">
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="190">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geek-auth-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-user-service/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="112">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/AuthApplication.java">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="300">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/GeekClient/src/pages/Main.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy_readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/SignedTaskService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/service/impl/SignedTaskServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="304">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/docker-compose.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-back.yml">
+    <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        <state relative-caret-position="318">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-jenkins.yaml">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/config/MockLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/docker-compose-jenkins.yaml">
+    <entry file="file://$PROJECT_DIR$/geek-common/src/main/java/common/util/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="95">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/deployment.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="836">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="608">
-            <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins/jenkinsfile-back">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-user-service/src/main/java/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/controller/SignedTaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/Dto/UserSignedInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/Dto/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="874">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <first_editor relative-caret-position="442">
+            <caret line="17" selection-start-line="17" selection-end-line="17" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/user_info.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/readme.md">
+    <entry file="file://$PROJECT_DIR$/readme_temp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor>
+            <caret selection-end-column="62" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-mysql-outter.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-deployment-service.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-gateway.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k8s-deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql-pv.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql-pvc.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/deployment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeekClient/src/util/consts_utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeekClient/src/pages/task/TaskDetail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="350" column="49" lean-forward="true" selection-start-line="350" selection-start-column="49" selection-end-line="350" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeekClient/src/util/uril_utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy_readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-151" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/jwt.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-task-service/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-ui-dashboard/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-deployment-ui.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/jenkinsfile-back">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/docker-compose-jenkins.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jenkins/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-deployment-db.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-back.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-jenkins.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compse-readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="445">
+            <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>

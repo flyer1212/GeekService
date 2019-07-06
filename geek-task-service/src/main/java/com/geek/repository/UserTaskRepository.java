@@ -15,4 +15,7 @@ public interface UserTaskRepository extends JpaRepository<UserTask, String> {
     @Query("select t from UserTask t where t.userId = :userId")
     List<UserTask> findByUserId(@Param("userId") String userId);
 
+    @Query("select t from UserTask t where t.taskId = :taskId")
+    List<UserTask> findByTaskId(@Param("taskId") String taskId);
+
 }

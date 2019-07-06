@@ -22,8 +22,10 @@ kind: Service
 metadata:
   name: geek-auth-mongo
 spec:
+  type: NodePort
   ports:
     - port: 27017
+      nodePort: 30008
   selector:
     app: geek-auth-mongo
 ---
@@ -52,8 +54,10 @@ kind: Service
 metadata:
   name: geek-user-mongo
 spec:
+  type: NodePort
   ports:
     - port: 27017
+      nodePort: 30007
   selector:
     app: geek-user-mongo
 
@@ -72,21 +76,37 @@ spec:
     spec:
       containers:
         - name: geek-task-mysql
-          image: mysql:5.7
+          image: mysql
           imagePullPolicy: IfNotPresent
           env:
             # Use secret in real usage
             - name: MYSQL_ROOT_PASSWORD
               value: root
+            - name: MYSQL_DATABASE
+              value: geek-db
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pvc
           ports:
-            - containerPort: 3306
+            - name: mysql
+              containerPort: 3306
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: geek-task-mysql
+  labels:
+    name: geek-task-mysql
 spec:
+  type: NodePort
   ports:
     - port: 3306
+      nodePort: 30006
+      protocol: TCP
+      targetPort: 3306
   selector:
     app: geek-task-mysql

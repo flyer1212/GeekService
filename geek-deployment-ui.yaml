@@ -11,17 +11,10 @@ spec:
     spec:
       containers:
         - name: geek-ui-dashboard
-          image: 10.141.211.160:5000/geek/geek-ui-dashboard
+          image: liuzozo/geek-ui-dashboard
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
 
 ---
 

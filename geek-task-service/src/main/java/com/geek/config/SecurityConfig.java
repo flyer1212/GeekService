@@ -63,6 +63,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers( "/task/**").permitAll()
+                .antMatchers( "/signtask").permitAll()
+                .antMatchers( "/signtask/*").permitAll()
                 .antMatchers( "/signtask/**").permitAll()
                 .antMatchers( HttpMethod.POST, "/task/**").hasAnyRole("ADMIN", "USER")
                 .antMatchers("/swagger-ui.html", "/webjars/**", "/images/**",

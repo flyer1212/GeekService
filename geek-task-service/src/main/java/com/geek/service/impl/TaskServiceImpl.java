@@ -32,6 +32,6 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Response findTaskByTaskId(String taskId) {
-        return new Response(1, "Success", taskRepository.findById(taskId));
+        return new Response(1, "Success", taskRepository.findByTaskId(taskId));
     }
 }

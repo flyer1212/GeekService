@@ -16,6 +16,7 @@ import java.util.List;
 public interface UserSignedRepository extends JpaRepository<UserSignedTask, String> {
 
 
+
     // 用户已经报名的
     @Query("select t from UserSignedTask t where t.userId = :userId and t.taskId = :taskId")
     UserSignedTask findSignedByUserAndTaskId(@Param("userId") String userId, @Param("taskId") String taskId);
@@ -30,7 +31,7 @@ public interface UserSignedRepository extends JpaRepository<UserSignedTask, Stri
     @Query("select t from UserSignedTask t where t.userId = :userId")
     List<UserSignedTask> findSignedByUserId(@Param("userId") String userId);
 
-    // 查询一个任务报名的所有人的信息
+   //  查询一个任务报名的所有人的信息
     @Query("select t from UserSignedTask t where t.taskId = :taskId")
     List<UserSignedTask> findSignedByTaskId(@Param("taskId") String taskId);
 

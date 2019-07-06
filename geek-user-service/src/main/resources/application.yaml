@@ -8,3 +8,8 @@ spring:
       host: geek-user-mongo
       database: geek-user
       port: 27017
+#  data:
+#    mongodb:
+#      host: 10.141.211.161
+#      database: geek-user
+#      port: 30007

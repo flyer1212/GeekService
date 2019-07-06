@@ -18,10 +18,15 @@ public class UserCommentTask implements Serializable {
 
     private static final long serialVersionUID = -4304389230803478681L;
     @Id
-    @Column(name = "commitId")
+    @Column(name = "id")
     @GeneratedValue(generator = "IdStrategy")
-    @GenericGenerator(name = "IdStrategy", strategy = "assigned")
+    @GenericGenerator(name = "IdStrategy", strategy = "identity")
+    private int id;
+
+
+    @Column(name = "commitId")
     private String commitId;
+
 
     @Column(name = "taskId")
     private String taskId;

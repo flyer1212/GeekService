@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: geek-user-service
 spec:
+  type: NodePort
   ports:
     - name: http
       port: 18001
+      nodePort: 32001
   selector:
     app: geek-user-service
 ---
@@ -21,19 +23,14 @@ spec:
       labels:
         app: geek-user-service
     spec:
+      type: NodePort
+      nodeName: k8snode1
       containers:
         - name: geek-user-service
           image: 10.141.211.160:5000/geek/geek-user-service
           imagePullPolicy: Always
           ports:
             - containerPort: 18001
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 200m
-              memory: 500Mi
 
 ---
 apiVersion: v1
@@ -41,9 +38,11 @@ kind: Service
 metadata:
   name: geek-task-service
 spec:
+  type: NodePort
   ports:
     - name: http
       port: 18002
+      nodePort: 32002
   selector:
     app: geek-task-service
 ---
@@ -60,27 +59,23 @@ spec:
         app: geek-task-service
     spec:
       containers:
-        - name: geek-user-service
+        - name: geek-task-service
           image: 10.141.211.160:5000/geek/geek-task-service
           imagePullPolicy: Always
           ports:
             - containerPort: 18002
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 200m
-              memory: 500Mi
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: geek-auth-service
 spec:
+  type: NodePort
   ports:
     - name: http
       port: 18000
+      nodePort: 32000
   selector:
     app: geek-auth-service
 ---
@@ -97,15 +92,8 @@ spec:
         app: geek-auth-service
     spec:
       containers:
-        - name: geek-user-service
+        - name: geek-auth-service
           image: 10.141.211.160:5000/geek/geek-auth-service
           imagePullPolicy: Always
           ports:
             - containerPort: 18000
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 200m
-              memory: 500Mi

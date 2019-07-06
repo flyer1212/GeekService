@@ -18,46 +18,76 @@
 //     }
 //   ];
 
+
+  //
+  // const requestURLs =  [
+  //   {
+  //     value: "http://localhost:18002/task",
+  //     label: "请求所有的task"
+  //   },
+  //   {
+  //     value: "http://localhost:18002/task/task/",
+  //     label: "taskdetail"
+  //   },
+  //   {
+  //     value: "http://localhost:18000/auth/login",
+  //     label: "login"
+  //   },
+  //   {
+  //     value: "http://localhost:18001/user/register",
+  //     label: "register"
+  //   },
+  //   {
+  //   value: "http://localhost:18002/signtask",
+  //   label: "signtask"
+  //  }
+  // ];
+
+// k8s and docker-compose
 const requestURLs = [
   {
-    value: "http://10.141.211.161:18002/task",
+    value: "/task",
     label: "请求所有的task"
   },
   {
-    value: "http://10.141.211.161:18002/task/task/",
+    value: "/task/task/",
     label: "taskdetail"
   },
   {
-    value: "http://10.141.211.161:18000/auth/login",
+    value: "/auth/login",
     label: "login"
   },
   {
-    value: "http://10.141.211.161:18001/user/register",
+    value: "/user/register",
     label: "register"
   },
   {
-    value: "http://10.141.211.161:18002/signtask",
+    value: "/signtask",
     label: "signtask"
   }
 ];
-
-//   const requestURLs2 =  [
-//     {
-//       value: "http://geek-task-service:18002/task",
-//       label: "请求所有的task"
-//     },
-//     {
-//       value: "http://geek-task-service:18002/task/task/",
-//       label: "taskdetail"
-//     },
-//     {
-//       value: "http://geek-auth-service:18000/auth/login",
-//       label: "login"
-//     },
-//     {
-//       value: "http://geek-user-service:18001/user/register",
-//       label: "register"
-//     }
-//   ];
+// docker-compose 外部
+// const requestURLs = [
+//   {
+//     value: "http://10.141.211.161:30002/task",
+//     label: "请求所有的task"
+//   },
+//   {
+//     value: "http://10.141.211.161:30002/task/task/",
+//     label: "taskdetail"
+//   },
+//   {
+//     value: "http://10.141.211.161:30000/auth/login",
+//     label: "login"
+//   },
+//   {
+//     value: "http://10.141.211.161:30001/user/register",
+//     label: "register"
+//   },
+//   {
+//     value: "http://10.141.211.161:30002/signtask",
+//     label: "signtask"
+//   }
+// ];
 
 export { requestURLs };

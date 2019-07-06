@@ -1,0 +1,17 @@
+server:
+  port: 18002
+spring:
+  application:
+    name: geek-task-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://geek-task-mysql:3306/geek_db?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL5Dialect
+

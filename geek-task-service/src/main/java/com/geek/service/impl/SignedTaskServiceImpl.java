@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class SignedTaskServiceImpl implements SignedTaskService {
 
-
+//    final String USER_INFO_SERVICE = "http://localhost:18001/user/ids";
     final String USER_INFO_SERVICE = "http://geek-user-service:18001/user/ids";
 
 
@@ -48,6 +48,8 @@ public class SignedTaskServiceImpl implements SignedTaskService {
         }
         userSignedTask.setSignedPeopleNum(userSignedRepository.countSignedTaskByTaskId(taskId));
         return new Response(1, "Success", userSignedTask);
+
+
     }
 
     /**
@@ -77,6 +79,7 @@ public class SignedTaskServiceImpl implements SignedTaskService {
             }
         }
         return new Response(1, "Success", signedInfos);
+
     }
 
     @Override

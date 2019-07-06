@@ -13,24 +13,25 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@IdClass(SignedTaskPrimaryKey.class)
 @Table(name = "UserSignedTask")
 public class UserSignedTask implements Serializable {
 
 
     private static final long serialVersionUID = 7432028413928815673L;
 
-//    @Id
-//    @Column(name = "signedId")
-//    @GeneratedValue(generator = "IdStrategy")
-//    @GenericGenerator(name = "IdStrategy", strategy = "assigned")
-//    private String signedId;
-
     @Id
+    @Column(name = "id")
+    @GeneratedValue(generator = "IdStrategy")
+    @GenericGenerator(name = "IdStrategy", strategy = "identity")
+    private int id;
+
+    @Column(name = "signedId")
+    private String signedId;
+
     @Column(name = "userId")
     private String userId;
 
-    @Id
+
     @Column(name = "taskId")
     private String taskId;
 
