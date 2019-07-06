@@ -7,7 +7,7 @@ pipeline{
         echo "=======  Clone code from github   ======="
         sh "docker-compose down"
         sh "git version"
-	git url: "https://github.com/liuZOZO/GeekService.git"
+	    git url: "https://github.com/liuZOZO/GeekService.git"
         script {
               build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
          }
@@ -53,14 +53,14 @@ pipeline{
      }
     }
     stage("Stop docker-compose"){
-          steps{
+
             echo "=======   stop docker-compose  ... ======="
             if (env.BRANCH_NAME == 'master') {
                  input "确认要停止部署上线吗？"
             }
             sh "docker-compose down"
             echo "======  stop docker-compose success!  ======"
-      }
+
     }
   }
 }
