@@ -25,7 +25,7 @@ pipeline{
         echo "======= mvn  clean package ======="
         sh "ls"
         sh "mvn -version"
-	sh "mvn clean package"
+	    sh "mvn clean package"
       }
     }
     stage("Build"){
@@ -51,6 +51,16 @@ pipeline{
       steps{
         echo "=======   test deployed service   ======="
      }
+    }
+    stage("Stop docker-compose"){
+          steps{
+            echo "=======   stop docker-compose  ... ======="
+            if (env.BRANCH_NAME == 'master') {
+                 input "确认要停止部署上线吗？"
+            }
+            sh "docker-compose down"
+            echo "======  stop docker-compose success!  ======"
+      }
     }
   }
 }
