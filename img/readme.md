@@ -2,7 +2,7 @@
 
 ![dsds](regist.png)
 
-![dsds](signed_user.png)
+![dsds](sigened_user.png)
 
 ![dsds](register_success.png)
 
