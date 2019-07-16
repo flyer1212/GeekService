@@ -9,7 +9,7 @@
 
 ![dsds](task.png)
 
-![dsds](task_detail.png)
+![dsds](task_detal.png)
 
 ![dsds](user_info.png)
 
