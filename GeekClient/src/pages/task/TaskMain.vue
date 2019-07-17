@@ -51,7 +51,7 @@
 
             <div class="task_body">
               <!-- 中间任务部分 -->
-              <span v-for="taskItem in showTaskList">
+              <span v-for="(taskItem, index) in showTaskList" :key="index">
                 <task-item :taskItem="taskItem"></task-item>
               </span>
             </div>

@@ -13,6 +13,7 @@
         <module>geek-user-service</module>
         <module>geek-task-service</module>
         <module>geek-common</module>
+        <module>geek-message-service</module>
     </modules>
 
     <parent>

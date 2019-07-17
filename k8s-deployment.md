@@ -30,5 +30,5 @@ kubectl apply -f install/kubernetes/zipkin.yaml
  kubectl delete -f geek-deployment-service.yaml 
  kubectl delete -f geek-deployment-ui.yaml 
  kubectl delete -f geek-gateway.yaml
- 
-  kubectl delete -f trainticket-gateway.yaml
+  
+kubectl delete -f trainticket-gateway.yaml
