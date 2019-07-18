@@ -2,8 +2,32 @@
   <div class="chart-room">
     Chart room
     <el-row class="chart-container">
-      <el-col :span="5" class="chart-left">people list</el-col>
-      <el-col :span="19" class="chart-right">
+      <!-- 当前在线用户列表 -->
+      <el-col :span="6" class="chart-left">
+        online- {{currentSelectedUser}}
+        <div
+          v-for="(user, index) in users.slice(1)"
+          :key="index"
+          style=" font-size: 10px; margin-top: 10px;"
+        >
+          <el-row>
+            <div v-on:click="selectUser2SendMSg(user.fromUserId, user.fromUserName)">
+              <el-col :span="9">
+                <img src="/static/img/autar.png" class="list-user-icon" />
+              </el-col>
+
+              <el-col :span="14" style="text-align: left">
+                <p>{{user.fromUserName}}</p>
+                <p>{{user.message}}</p>
+                <p>{{ user.date}}</p>
+              </el-col>
+            </div>
+          </el-row>
+        </div>
+        <!-- </div> -->
+      </el-col>
+
+      <el-col :span="18" class="chart-right">
         <el-col class="chart-body">
           <!-- 聊天记录 -->
           <el-col class="chart-show">
@@ -81,9 +105,16 @@ export default {
       socket: "",
       input_msg: "",
       msgs: [
-        { person: "Admin", words: "hi, 很高兴为您服务" },
-        { person: "Customer", words: "hello, 谢谢亲!33332" }
-      ]
+        { person: "Admin", words: "hi, 很高兴为您服务" }
+        // { person: "Customer", words: "hello, 谢谢亲!33332" }
+      ],
+      // admin 左侧的用户列表
+      // fromUserId, fromUserName, message, date
+      users: [],
+      // 当前选择的id, 默认是都向admin 发
+      // 只有admin 选择左边用户列表，才会变成选择的用户
+      currentSelectedId: "4d2a46c7-71c4-4cf1-b5bb-b68406d9da6f",
+      currentSelectedUser: "user123"
     };
   },
   mounted() {
@@ -116,11 +147,17 @@ export default {
       console.log(userId);
       // 注册自己
       if (userId != "") {
-        this.socket.send(
-          "{'commandType': '1','fromUserId':'" +
-            userId +
-            "','fromUserName':'I am tom'}"
-        );
+        let msg2Regist = JSON.stringify({
+          commandType: 1,
+          fromUserId: userId,
+          fromUserName: this.$store.state.userName,
+          toUserId: "",
+          toUserName: "",
+          message: "regist",
+          date: new Date().getTime()
+        });
+        // 注册channel 长连接
+        this.socket.send(msg2Regist);
       }
     },
     error: function() {
@@ -128,23 +165,81 @@ export default {
     },
     getMessage: function(msg) {
       console.log(msg.data);
-      var receiveMsg =  JSON.parse(msg.data)
-      console.log(receiveMsg.status)
+      var receiveMsg = JSON.parse(msg.data);
+
+      // Admin 指left   Customer 指right
+      // 收到别人的消息，肯定显示在左边
       this.msgs.push({ person: "Admin", words: receiveMsg.message });
- 
+
+      if (this.$store.state.userName == "user123") {
+        // 在这里接收一下发给admin的fromUserId, fromUserName, message, date
+        // 如果当前用户是admin 才接收，其他用户不接收
+
+        // 先找一下user 列表里面是否有, 如果有的话,直接更新一下message, 没有再添加
+        var myDate = new Date();
+        var timeNow =
+          myDate.getHours() +
+          ":" +
+          this.conver(myDate.getMinutes()) +
+          ":" +
+          this.conver(myDate.getSeconds());
+
+        var hasTag = false;
+        for (var i = 0; i < this.users.length; i++) {
+          if (this.users[i].fromUserId == receiveMsg.fromUserId) {
+            this.users[i].message = receiveMsg.message;
+            this.users[i].date = timeNow;
+            hasTag = true;
+            break;
+          }
+        }
+
+        // 如果没有, 就加到列表里面
+        if (!hasTag) {
+          this.users.push({
+            fromUserId: receiveMsg.fromUserId,
+            fromUserName: receiveMsg.fromUserName,
+            message: receiveMsg.message,
+            date: timeNow
+          });
+        }
+      }
+      // }
     },
     send: function() {
       // user123 的admin的 4d2a46c7-71c4-4cf1-b5bb-b68406d9da6f
       // 用户12 的 06dcc9a9-a38a-4b6f-9dec-b70c0ab92050
-      this.msgs.push({ person: "Customer", words: this.input_msg });
-      var msg =
-        "{'toUserId':'4d2a46c7-71c4-4cf1-b5bb-b68406d9da6f','message':' " +
-        this.input_msg +
-        "'}";
-      this.socket.send(msg);
+
+      if (this.currentSelectedId != this.$store.state.userId) {
+        this.msgs.push({ person: "Customer", words: this.input_msg });
+
+        // 向admin 发送消息的,暂时把admin 先写死
+        let msg2Admin = JSON.stringify({
+          commandType: 2,
+          fromUserId: this.$store.state.userId,
+          fromUserName: this.$store.state.userName,
+          toUserId: this.currentSelectedId,
+          toUserName: this.currentSelectedName,
+          message: this.input_msg,
+          date: new Date().getTime()
+        });
+        // 发送出去
+        this.socket.send(msg2Admin);
+      } else {
+        alert("Please select a client!");
+      }
+    },
+    selectUser2SendMSg: function(userId, fromUserName) {
+      console.log(fromUserName);
+      this.currentSelectedId = userId;
+      this.currentSelectedUser = fromUserName;
+      this.msgs = [{ person: "Admin", words: "hi, 很高兴为您服务" }];
     },
     close: function() {
       console.log("socket已经关闭");
+    },
+    conver: function(s) {
+      return s < 10 ? "0" + s : s;
     }
   },
   destroyed() {
@@ -216,5 +311,9 @@ export default {
 }
 .user-icon-small {
   vertical-align: middle;
+}
+.list-user-icon {
+  height: 50px;
+  width: 50px;
 }
 </style>

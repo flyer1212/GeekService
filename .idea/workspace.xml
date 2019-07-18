@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff12cf8-74d6-4727-88af-ea51d05c2c3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/geek-message-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/NettyMsgServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/attribute/Attributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessageRequestPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/init_netty/InitNettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/session/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/util/SessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-message-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/npm run dev npm run build.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/pages/task/TaskMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/pages/userinfo/UserMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/pages/userinfo/UserMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/util/uril_utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s-deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/k8s-deployment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekClient/src/pages/userinfo/menuitems/CustomerService.vue" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/pages/userinfo/menuitems/CustomerService.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeekClient/src/util/date_utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/GeekClient/src/util/date_utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessageRequestPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessagePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/target/classes/msg/entity/MessageRequestPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/target/classes/msg/server/NettyClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-message-service/target/classes/msg/server/NettyClientTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-message-service/target/classes/msg/server/handler/MsgRequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/geek-message-service/target/classes/msg/server/handler/MsgRequestHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/geek-user-service/target/" />
     <ignored path="$PROJECT_DIR$/geek-common/target/" />
@@ -50,31 +30,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessageRequestPacket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="61" column="69" lean-forward="true" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+            <state relative-caret-position="-700">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +52,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/NettyMsgServerApplication.java">
+        <entry file="file://$PROJECT_DIR$/geek-message-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="232">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="50" column="118" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="692">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/k8s.md" />
         <option value="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" />
         <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/UserController.java" />
         <option value="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" />
@@ -241,11 +217,12 @@
         <option value="$PROJECT_DIR$/k8s-deployment.md" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessageRequestPacket.java" />
-        <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/session/Session.java" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/attribute/Attributes.java" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/util/SessionUtil.java" />
+        <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessagePacket.java" />
         <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java" />
+        <option value="$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java" />
       </list>
     </option>
   </component>
@@ -299,11 +276,11 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1442" />
-    <option name="y" value="125" />
-    <option name="width" value="1446" />
-    <option name="height" value="827" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1525" />
+    <option name="height" value="641" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -320,40 +297,6 @@
             <path>
               <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
               <item name="geek-message-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -385,16 +328,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="msg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-message-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msg" type="462c0819:PsiDirectoryNode" />
-              <item name="attribute" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
@@ -405,27 +338,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="msg" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-message-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msg" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeekService" type="462c0819:PsiDirectoryNode" />
-              <item name="geek-message-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msg" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GeekService" type="b2602c69:ProjectViewProjectNode" />
@@ -586,17 +498,19 @@
       <workItem from="1561614727719" duration="2479000" />
       <workItem from="1562390174849" duration="19383000" />
       <workItem from="1563256914721" duration="23299000" />
-      <workItem from="1563323140476" duration="3621000" />
+      <workItem from="1563323140476" duration="10139000" />
+      <workItem from="1563409282425" duration="2947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139041000" />
+    <option name="totallyTimeSpent" value="148506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1442" y="125" width="1446" height="827" extended-state="1" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18858382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13713981" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -606,7 +520,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49937028" visible="true" weight="0.28156748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49937028" visible="true" weight="0.7852883" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -868,9 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/geek-deployment-ui.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -885,20 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1643">
-          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/init_netty/InitNettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -909,28 +806,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessageRequestPacket.java">
+    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/entity/MessagePacket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="145">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+        <state relative-caret-position="1856">
+          <caret line="64" selection-start-line="64" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/NettyMsgServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -971,20 +867,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/NettyMsgServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/geek-auth-service/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="74">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java">
+    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="272">
+          <caret line="50" column="118" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -993,8 +886,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/handler/MsgRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="61" column="69" lean-forward="true" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
+        <state relative-caret-position="-700">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-message-service/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-message-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geek-message-service/src/main/java/msg/server/NettyClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

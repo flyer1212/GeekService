@@ -6,11 +6,10 @@ import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
-import msg.entity.MessageRequestPacket;
+import msg.entity.MessagePacket;
 import msg.session.Session;
 import msg.util.SessionUtil;
 
-import java.time.LocalDateTime;
 
 /**
  * WebSocket在 6中帧里面发送数据
@@ -39,16 +38,14 @@ public class MsgRequestHandler extends SimpleChannelInboundHandler<TextWebSocket
         System.out.println(channel.remoteAddress() + ":" + msg.text());
 
         Gson gson = new Gson();
-        MessageRequestPacket mrp = gson.fromJson(msg.text(), MessageRequestPacket.class);
+        MessagePacket mrp = gson.fromJson(msg.text(), MessagePacket.class);
 
         if (mrp.getCommandType() == 1) { // 登录 用户的id, 用户名
             Session session = new Session(mrp.getFromUserId().split("-")[0], mrp.getFromUserName());
             // 把用户的消息和channle 绑定在一起
             SessionUtil.bindSession(session, channel);
 
-
-            channel.writeAndFlush(new TextWebSocketFrame("{ \"status\" :\"1\", \"message\" :\"success\"}"));
-
+            channel.writeAndFlush(new TextWebSocketFrame("{ \"status\" :\"1\", \"message\" :\"regist success\"}"));
 
             // 测试通过id 拿channel ,结果是可以的
 //            Channel channel1 = SessionUtil.getChannel(mrp.getFromUserId().split("-")[0]);
@@ -57,10 +54,11 @@ public class MsgRequestHandler extends SimpleChannelInboundHandler<TextWebSocket
             System.out.println(" ------登录成功-----");
         } else { // 发送消息的  toUserId  和 message
             String toUserId = mrp.getToUserId().split("-")[0];
+
             String message = mrp.getMessage();
 
             Channel toUserChannel = SessionUtil.getChannel(toUserId);
-            toUserChannel.writeAndFlush(new TextWebSocketFrame("{ \"status\" : \"1\", \"message\" : "+ "\""+message+"\"}"));
+            toUserChannel.writeAndFlush(new TextWebSocketFrame(gson.toJson(mrp)));
             System.out.println("----消息已经发送到对方-----");
         }
 
