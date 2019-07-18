@@ -101,7 +101,7 @@ export default {
   name: "CustomerService",
   data() {
     return {
-      path: "ws://127.0.0.1:8000/ws",
+      path: "ws://geek-message-service:32008/ws",
       socket: "",
       input_msg: "",
       msgs: [

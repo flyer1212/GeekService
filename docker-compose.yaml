@@ -70,6 +70,16 @@ services:
     networks:
       - geek-network
 
+  geek-message-service:
+    build: geek-message-service
+    image: 10.141.211.160:5000/geek/geek-message-service
+    restart: always
+    ports:
+#      web port socket port
+      - 18009:18009
+    networks:
+      - geek-network
+
 networks:
   geek-network:
     driver: bridge

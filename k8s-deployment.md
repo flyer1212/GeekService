@@ -13,7 +13,8 @@ kubectl apply -f install/kubernetes/zipkin.yaml
  docker push 10.141.211.160:5000/geek/geek-task-service
  docker push 10.141.211.160:5000/geek/geek-auth-service
  docker push 10.141.211.160:5000/geek/geek-ui-dashboard
- 
+ docker push 10.141.211.160:5000/geek/geek-message-service
+  
  docker push  liuzozo/geek-ui-dashboard
  
 # deployment
@@ -32,3 +33,7 @@ kubectl apply -f install/kubernetes/zipkin.yaml
  kubectl delete -f geek-gateway.yaml
   
 kubectl delete -f trainticket-gateway.yaml
+
+
+
+docker images|grep geek/geek |awk '{print $3 }'|xargs docker rmi
