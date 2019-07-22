@@ -19,30 +19,6 @@
 //   ];
 
 
-  //
-  // const requestURLs =  [
-  //   {
-  //     value: "http://localhost:18002/task",
-  //     label: "请求所有的task"
-  //   },
-  //   {
-  //     value: "http://localhost:18002/task/task/",
-  //     label: "taskdetail"
-  //   },
-  //   {
-  //     value: "http://localhost:18000/auth/login",
-  //     label: "login"
-  //   },
-  //   {
-  //     value: "http://localhost:18001/user/register",
-  //     label: "register"
-  //   },
-  //   {
-  //   value: "http://localhost:18002/signtask",
-  //   label: "signtask"
-  //  }
-  // ];
-
 // k8s and docker-compose 部署在服务器上， ui 也部署在服务器上使用
 const requestURLs = [
   {
@@ -64,8 +40,19 @@ const requestURLs = [
   {
     value: "/signtask",
     label: "signtask"
+  },
+  {
+    value: "ws:geek-message-service:18009/ws",
+    // value: "ws://10.141.211.161:18009/ws",
+    // value: "/ws",
+    label: "websocket"
+  },
+  {
+    value: "/msg",
+    label: "webmsg"
   }
 ];
+
 // k8s  部署在服务器上，但是ui 部署在本地电脑
 // const requestURLs = [
 //   {
@@ -87,7 +74,66 @@ const requestURLs = [
 //   {
 //     value: "http://10.141.211.161:32002/signtask",
 //     label: "signtask"
+//   },{
+//     value: "ws://10.141.211.161:18009/ws",
+//     label: "websocket"
+//   },{
+//      value: "http://10.141.211.161:18008/msg",
+//     label: "webmsg"
+// }
+// ];
+
+
+// docker-compose   部署在服务器上，但是ui 部署在本地电脑
+// const requestURLs = [
+//   {
+//     value: "http://10.141.211.161:18002/task",
+//     label: "请求所有的task"
+//   },
+//   {
+//     value: "http://10.141.211.161:18002/task/task/",
+//     label: "taskdetail"
+//   },
+//   {
+//     value: "http://10.141.211.161:18000/auth/login",
+//     label: "login"
+//   },
+//   {
+//     value: "http://10.141.211.161:18001/user/register",
+//     label: "register"
+//   },
+//   {
+//     value: "http://10.141.211.161:18002/signtask",
+//     label: "signtask"
+//   },{
+//     value: "ws://10.141.211.161:18009/ws",
+//     label: "websocket"
 //   }
 // ];
 
-export { requestURLs };
+
+// docker-compose   部署在服务器上，但是ui 部署在本地电脑
+// const requestURLs = [
+//   {
+//     value: "http://localhost:18002/task",
+//     label: "请求所有的task"
+//   },
+//   {
+//     value: "http://localhost:18002/task/task/",
+//     label: "taskdetail"
+//   },
+//   {
+//     value: "http://localhost:18000/auth/login",
+//     label: "login"
+//   },
+//   {
+//     value: "http://localhost:18001/user/register",
+//     label: "register"
+//   },
+//   {
+//     value: "http://localhost:18002/signtask",
+//     label: "signtask"
+//   }
+// ];
+
+export {requestURLs};

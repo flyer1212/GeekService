@@ -33,7 +33,7 @@ services:
       - geek-network
 
   geek-ui-dashboard:
-    build: geek-ui-dashboard
+    build: ../geek-ui-dashboard
     image: 10.141.211.160:5000/geek/geek-ui-dashboard
     restart: always
     ports:
@@ -42,7 +42,7 @@ services:
       - geek-network
 
   geek-auth-service:
-    build: geek-auth-service
+    build: ../geek-auth-service
     image: 10.141.211.160:5000/geek/geek-auth-service
     restart: always
     ports:
@@ -51,7 +51,7 @@ services:
       - geek-network
 
   geek-user-service:
-    build: geek-user-service
+    build: ../geek-user-service
     image: 10.141.211.160:5000/geek/geek-user-service
     restart: always
     ports:
@@ -60,7 +60,7 @@ services:
       - geek-network
 
   geek-task-service:
-    build: geek-task-service
+    build: ../geek-task-service
     image: 10.141.211.160:5000/geek/geek-task-service
     depends_on:
       - geek-task-mysql

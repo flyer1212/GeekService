@@ -66,8 +66,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 import { requestURLs } from "@/util/uril_utils";
 
 export default {

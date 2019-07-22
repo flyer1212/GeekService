@@ -17,6 +17,20 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.6.Final</version>
         </dependency>
+
+
+
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>msg.NettyMsgServerApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -97,11 +97,14 @@
 </template>
 
 <script>
+
+import { requestURLs } from "@/util/uril_utils";
+
 export default {
   name: "CustomerService",
   data() {
     return {
-      path: "ws://geek-message-service:32008/ws",
+      path: requestURLs[5].value,
       socket: "",
       input_msg: "",
       msgs: [
@@ -280,6 +283,8 @@ export default {
 }
 
 .chart-show {
+  height: 300px;
+  overflow-y: auto;
 }
 .left_talk {
   margin: 10px;
