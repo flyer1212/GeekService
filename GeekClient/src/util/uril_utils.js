@@ -42,8 +42,9 @@ const requestURLs = [
     label: "signtask"
   },
   {
-    value: "ws:geek-message-service:18009/ws",
-    // value: "ws://10.141.211.161:18009/ws",
+    // value: "ws://10.141.211.161:32677/ws",
+    // value: "ws://geek-message-service:8282/ws",
+    value: "ws://10.141.211.161:18009/ws",
     // value: "/ws",
     label: "websocket"
   },

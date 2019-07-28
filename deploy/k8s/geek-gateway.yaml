@@ -55,3 +55,11 @@ spec:
         host: geek-auth-service
         port:
           number: 18000
+#  - match:
+#    - uri:
+#        prefix: /ws
+#    route:
+#    - destination:
+#        host: geek-message-service
+#        port:
+#          number: 18009

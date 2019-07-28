@@ -25,12 +25,17 @@ kubectl apply -f install/kubernetes/zipkin.yaml
  kubectl apply -f <(istioctl kube-inject -f geek-deployment-ui.yaml)
  kubectl apply -f geek-gateway.yaml
 
+ docker-compose -f docker-compose-websocket.yaml up -d
+ 
+ 
 # delete
  kubectl delete -f geek-deployment-db.yaml 
  
  kubectl delete -f geek-deployment-service.yaml 
  kubectl delete -f geek-deployment-ui.yaml 
  kubectl delete -f geek-gateway.yaml
+ docker-compose -f docker-compose-websocket.yaml down
+  
   
 kubectl delete -f trainticket-gateway.yaml
 

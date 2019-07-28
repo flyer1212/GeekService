@@ -18,3 +18,9 @@
 ![dsds](detail_main.png)
 
 ![dsds](feed_back.png)
+
+
+![dsds](talk.png)
+
+
+![dsds](client_talk.png)
