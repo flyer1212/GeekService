@@ -86,6 +86,18 @@
                   </router-link>
                 </el-row>
 
+
+                <el-row>
+                  <router-link to="/app/user_info/customer-service">
+                    <button type="button" class="el-button">
+                      <span>
+                        <i class="el-icon-service"></i> 客服
+                      </span>
+                    </button>
+                  </router-link>
+                </el-row>
+                
+
                 <el-row>
                   <a>
                     <button type="button" class="el-button">
@@ -145,7 +157,7 @@ export default {
       this.$store.commit("changeUserName", '');
       this.$store.commit("changeToken", '');
       this.$store.commit("changeLoginOrNot", false);
-       this.$router.push("/login");
+      this.$router.push("/login");
     }
   }
 };

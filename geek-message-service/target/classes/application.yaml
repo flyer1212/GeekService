@@ -1,0 +1,4 @@
+server:
+  port: 18008
+netty:
+  port: 18009

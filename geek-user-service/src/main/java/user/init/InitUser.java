@@ -32,8 +32,8 @@ public class InitUser implements CommandLineRunner {
         User whetherExistUser = userRepository.findByUserName("user");
         User user = User.builder()
                 .userId("4d2a46c7-71c4-4cf1-b5bb-b68406d9da6f")
-                .userName("user")
-                .password("123456")
+                .userName("user123")
+                .password("111111")
                 .sex(1)
                 .major("软件工程")
                 .idCard("2135488099312X")

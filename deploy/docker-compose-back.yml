@@ -1,0 +1,75 @@
+version: '3'
+services:
+
+  geek-task-mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    command: [
+      --character-set-server=utf8mb4,
+      --collation-server=utf8mb4_unicode_ci
+    ]
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: geek
+    volumes:
+      - ./task-mysql/mysql.conf:/etc/my.cnf
+      - ./task-mysql/data:/var/lib/mysql
+    networks:
+      - geek-network
+
+  geek-user-mongo:
+    image: mongo
+    ports:
+      - 27019:27017
+    networks:
+      - geek-network
+
+  geek-auth-mongo:
+    image: mongo
+    ports:
+      - 27018:27017
+    networks:
+      - geek-network
+
+  geek-ui-dashboard:
+    build: ../geek-ui-dashboard
+    image: 10.141.211.160:5000/geek/geek-ui-dashboard
+    restart: always
+    ports:
+      - 80:8080
+    networks:
+      - geek-network
+
+  geek-auth-service:
+    build: ../geek-auth-service
+    image: 10.141.211.160:5000/geek/geek-auth-service
+    restart: always
+    ports:
+      - 18000:18000
+    networks:
+      - geek-network
+
+  geek-user-service:
+    build: ../geek-user-service
+    image: 10.141.211.160:5000/geek/geek-user-service
+    restart: always
+    ports:
+      - 18001:18001
+    networks:
+      - geek-network
+
+  geek-task-service:
+    build: ../geek-task-service
+    image: 10.141.211.160:5000/geek/geek-task-service
+    depends_on:
+      - geek-task-mysql
+    restart: always
+    ports:
+      - 18002:18002
+    networks:
+      - geek-network
+
+networks:
+  geek-network:
+    driver: bridge

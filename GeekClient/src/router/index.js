@@ -15,6 +15,7 @@ import MyTask from '@/pages/userinfo/menuitems/MyTask'
 import TaskDetail from   '@/pages/task/TaskDetail'
 import Login from '@/pages/login/Login'
 import Register from '@/pages/register/Register'
+import CustomerService from '@/pages/userinfo/menuitems/CustomerService'
 
 Vue.use(Router)
 
@@ -71,6 +72,10 @@ export default new Router({
           path: 'feed-back',
           name:'FeedBack',
           component: FeedBack
+        },{
+          path: 'customer-service',
+          name:'CustomerService',
+          component: CustomerService
         },{
           path: 'publish-task',
           name:'PublishTask',

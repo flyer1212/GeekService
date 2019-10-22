@@ -9,12 +9,14 @@
         <module name="geek-user-service" />
         <module name="geek-common" />
         <module name="geek-auth-service" />
+        <module name="geek-message-service" />
         <module name="geek-task-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="geek-auth-service" target="1.8" />
       <module name="geek-common" target="1.8" />
+      <module name="geek-message-service" target="1.8" />
       <module name="geek-task-service" target="1.8" />
       <module name="geek-user-service" target="1.8" />
       <module name="GeekService" target="1.8" />
@@ -24,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="geek-auth-service" options="-parameters" />
       <module name="geek-common" options="-parameters" />
+      <module name="geek-message-service" options="-parameters" />
       <module name="geek-task-service" options="-parameters" />
       <module name="geek-user-service" options="-parameters" />
     </option>

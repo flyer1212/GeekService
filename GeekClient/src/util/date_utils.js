@@ -57,8 +57,20 @@ const calculateEndDay = function(endDate) {
   }
 };
 
+
+const timestamp2Time =  function(timestamp) {
+  var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+  // Y = date.getFullYear() + '-';
+  // M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+  // D = date.getDate() + ' ';
+  var h = date.getHours() + ':';
+  var m = date.getMinutes() + ':';
+  var s = date.getSeconds();
+  return  h+m+s;
+}
+
 const hello = function(){
   console.log("hello !")
 }
 
-export {sumbitTime, calculateEndDay, hello}
+export {sumbitTime, calculateEndDay,timestamp2Time, hello}
