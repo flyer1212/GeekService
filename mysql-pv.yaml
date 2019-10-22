@@ -11,4 +11,4 @@ spec:
   storageClassName: nfs
   nfs:
     path: /nfsdata/pv1
-    server: 10.141.211.161
+    server: 10.141.212.139
