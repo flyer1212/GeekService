@@ -16,6 +16,11 @@ spring:
   jooq:
     sql-dialect: org.hibernate.dialect.MySQL5Dialect
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
 #  spring.jpa.database-platform = #要运行的目标数据库的名称，默认情况下自动检测。可以使用“数据库”枚举来设置
 # JOOQ (JooqAutoConfiguration)
 # spring.jooq.sql-dialect=  # 与配置的数据源通信时使用的SQLDialect JOOQ。 例如`POSTGRES`

@@ -1,0 +1,21 @@
+server:
+  port: 18000
+spring:
+  application:
+    name: geek-auth-service
+  data:
+    mongodb:
+      host: http://10.141.212.139
+      database: geek-auth
+      port: 30008
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: prometheus
+#  data:
+#    mongodb:
+#      host: 10.141.211.161
+#      database: geek-auth
+#      port: 30008

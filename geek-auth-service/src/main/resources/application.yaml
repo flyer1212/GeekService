@@ -8,6 +8,12 @@ spring:
       host: geek-auth-mongo
       database: geek-auth
       port: 27017
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
 #  data:
 #    mongodb:
 #      host: 10.141.211.161

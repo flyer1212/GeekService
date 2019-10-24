@@ -20,6 +20,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "18001"
+        prometheus.io/path: "/actuator/prometheus"
       labels:
         app: geek-user-service
     spec:
@@ -55,6 +59,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "18002"
+        prometheus.io/path: "/actuator/prometheus"
       labels:
         app: geek-task-service
     spec:
@@ -88,6 +96,10 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "18000"
+        prometheus.io/path: "/actuator/prometheus"
       labels:
         app: geek-auth-service
     spec:

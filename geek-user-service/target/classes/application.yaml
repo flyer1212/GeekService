@@ -1,0 +1,23 @@
+server:
+  port: 18001
+spring:
+  application:
+    name: geek-user-service
+  data:
+    mongodb:
+      host: 10.141.212.139
+      database: geek-user
+      port: 30007
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
+  server:
+    port: 8089
+#  data:
+#    mongodb:
+#      host: 10.141.211.161
+#      database: geek-user
+#      port: 30007

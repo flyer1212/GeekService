@@ -5,9 +5,15 @@ spring:
     name: geek-user-service
   data:
     mongodb:
-      host: geek-user-mongo
+      host: 10.141.212.139
       database: geek-user
-      port: 27017
+      port: 30007
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus
 #  data:
 #    mongodb:
 #      host: 10.141.211.161
