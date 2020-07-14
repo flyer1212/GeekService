@@ -13,9 +13,35 @@ Geek client ui and Server
 
 > ts-ui-dashboard 需要更改utils 里面的http路径
 
->   docker run -p 8080:8080 -p 50000:50000  -v /home/jenkins-home-docker:/var/jenkins_home  jenkins/jenkins:lts
+> docker run -p 8080:8080 -p 50000:50000  -v /home/jenkins-home-docker:/var/jenkins_home  jenkins/jenkins:lts
 
+> docker images|grep geek |awk '{print $3 }'|xargs docker rmi
 
 # 项目运行结果
-[图例](./img/readme.md)
+![dsds](login.png)
+
+![dsds](regist.png)
+
+![dsds](sigened_user.png)
+
+![dsds](register_success.png)
+
+
+![dsds](task.png)
+
+![dsds](task_detal.png)
+
+![dsds](user_info.png)
+
+![dsds](singed.png)
+
+![dsds](detail_main.png)
+
+![dsds](feed_back.png)
+
+
+![dsds](talk.png)
+
+
+![dsds](client_talk.png)
 

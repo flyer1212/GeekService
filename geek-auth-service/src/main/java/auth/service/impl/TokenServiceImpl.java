@@ -39,7 +39,6 @@ public class TokenServiceImpl implements TokenService {
         // verify username and password
         UsernamePasswordAuthenticationToken upat = new UsernamePasswordAuthenticationToken(username, password);
         authenticationManager.authenticate(upat);
-
         log.info("verify  success");
         User user = this.userRepository.findByUsername(username)
                 .orElseThrow(() -> new UserOperationException(MessageFormat.format(

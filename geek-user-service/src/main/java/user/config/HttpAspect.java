@@ -121,6 +121,7 @@ public class HttpAspect {
                 "[URI:" + uri.get() + "]" +
                 "[ExceptionMessage:" + e.toString() + "]" +
                 "[ExceptionCause:" + e.getCause() + "]" +
+                "[ExceptionClass:" + e.getClass() + "]" +
                 "[ExceptionStack:" + Arrays.toString(e.getStackTrace()) + "]");
 
     }

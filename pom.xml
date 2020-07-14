@@ -14,6 +14,8 @@
         <module>geek-task-service</module>
         <module>geek-common</module>
         <module>geek-message-service</module>
+        <module>geek-test</module>
+        <module>geek-neo4j</module>
     </modules>
 
     <parent>
@@ -41,10 +43,10 @@
 
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
-        </dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.16.18</version>
+    </dependency>
 
 
         <dependency>

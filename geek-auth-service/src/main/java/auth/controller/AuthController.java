@@ -24,11 +24,15 @@ public class AuthController {
 
     @GetMapping("/hello")
     public Object getHello() {
+
+
         return "Hello";
     }
 
+
     @PostMapping("/login")
     public ResponseEntity<Response> getToken(@RequestBody BasicAuthDto dao) {
+
         return ResponseEntity.ok(tokenService.getToken(dao));
     }
 

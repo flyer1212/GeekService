@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" filepath="$PROJECT_DIR$/geek-auth-service/geek-auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/geek-common/geek-common.iml" filepath="$PROJECT_DIR$/geek-common/geek-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/geek-message-service/geek-message-service.iml" filepath="$PROJECT_DIR$/geek-message-service/geek-message-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-neo4j/geek-neo4j.iml" filepath="$PROJECT_DIR$/geek-neo4j/geek-neo4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/geek-task-service/geek-task-service.iml" filepath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geek-test/geek-test.iml" filepath="$PROJECT_DIR$/geek-test/geek-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/geek-user-service/geek-user-service.iml" filepath="$PROJECT_DIR$/geek-user-service/geek-user-service.iml" />
     </modules>
   </component>

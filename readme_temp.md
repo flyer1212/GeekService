@@ -1,1 +1,0 @@
-docker images|grep geek |awk '{print $3 }'|xargs docker rmi

@@ -17,6 +17,8 @@ import java.util.Arrays;
  * 拦截三部分日志
  * 拦截controller 执行前后
  * 拦截service 里面日志
+ *
+ * Component 将切面声明为bean
  */
 @Aspect
 @Component
@@ -78,6 +80,7 @@ public class HttpAspect {
             }
         }
 
+        System.out.println("====== " + sb.toString() );
         logger.info(sb.toString() +
                 "[URI:" + url + "]" +
                 "[Method:" + method + "]" +
@@ -121,6 +124,7 @@ public class HttpAspect {
                 "[URI:" + uri.get() + "]" +
                 "[ExceptionMessage:" + e.toString() + "]" +
                 "[ExceptionCause:" + e.getCause() + "]" +
+                "[ExceptionClass:" + e.getClass() + "]" +
                 "[ExceptionStack:" + Arrays.toString(e.getStackTrace()) + "]");
 
     }

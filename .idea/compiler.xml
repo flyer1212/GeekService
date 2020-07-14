@@ -7,17 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="geek-user-service" />
-        <module name="geek-common" />
         <module name="geek-auth-service" />
-        <module name="geek-message-service" />
+        <module name="geek-common" />
+        <module name="geek-neo4j" />
         <module name="geek-task-service" />
+        <module name="geek-test" />
+        <module name="geek-message-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="geek-auth-service" target="1.8" />
       <module name="geek-common" target="1.8" />
       <module name="geek-message-service" target="1.8" />
+      <module name="geek-neo4j" target="1.8" />
       <module name="geek-task-service" target="1.8" />
+      <module name="geek-test" target="1.8" />
       <module name="geek-user-service" target="1.8" />
       <module name="GeekService" target="1.8" />
     </bytecodeTargetLevel>
@@ -27,7 +31,9 @@
       <module name="geek-auth-service" options="-parameters" />
       <module name="geek-common" options="-parameters" />
       <module name="geek-message-service" options="-parameters" />
+      <module name="geek-neo4j" options="-parameters" />
       <module name="geek-task-service" options="-parameters" />
+      <module name="geek-test" options="-parameters" />
       <module name="geek-user-service" options="-parameters" />
     </option>
   </component>
