@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d31b95b-bafd-40c4-9138-5eb44221fec8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_lukehutch_fast_classpath_scanner_2_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_core_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_mysql_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_1_19_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter_zipkin_reporter_0_6_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_neo4j_driver_neo4j_java_driver_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_neo4j_neo4j_ogm_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_neo4j_neo4j_ogm_bolt_driver_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_neo4j_neo4j_ogm_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_neo4j_2_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_neo4j_5_0_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-neo4j/geek-neo4j.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-neo4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/geek-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/src/main/java/hello/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/src/main/java/hello/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/src/main/java/hello/AppService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-test/src/main/java/hello/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile.bak" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/k8s/k8s-deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/k8s/k8s-deployment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/config/HttpAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-auth-service/src/main/java/auth/service/impl/TokenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/geek-task-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/TaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/TaskApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/config/HttpAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-task-service/src/main/java/com/geek/entity/UserTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/css/app.2fb3e50f528dffda85cef243fa363dbd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/css/app.2fb3e50f528dffda85cef243fa363dbd.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/img/es6daily.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/img/female.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/img/geek+.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/img/geek.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/img/male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/app.65de05fafc09a612e5c4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/app.65de05fafc09a612e5c4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/vendor.2cd18087d1bb5ba5a2b0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-ui/geek-ui-dashboard/static/static/js/vendor.2cd18087d1bb5ba5a2b0.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-user-service/src/main/java/user/config/HttpAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme_temp.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme_temp.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +144,7 @@
       <workItem from="1575733523718" duration="611000" />
       <workItem from="1578189549493" duration="52000" />
       <workItem from="1585476110581" duration="75000" />
-      <workItem from="1594688299728" duration="1504000" />
+      <workItem from="1594688299728" duration="1937000" />
     </task>
     <servers />
   </component>

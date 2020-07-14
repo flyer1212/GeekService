@@ -18,30 +18,30 @@ Geek client ui and Server
 > docker images|grep geek |awk '{print $3 }'|xargs docker rmi
 
 # 项目运行结果
-![dsds](login.png)
+![dsds](./img/login.png)
 
-![dsds](regist.png)
+![dsds](./img/regist.png)
 
-![dsds](sigened_user.png)
+![dsds](./img/sigened_user.png)
 
-![dsds](register_success.png)
-
-
-![dsds](task.png)
-
-![dsds](task_detal.png)
-
-![dsds](user_info.png)
-
-![dsds](singed.png)
-
-![dsds](detail_main.png)
-
-![dsds](feed_back.png)
+![dsds](./img/register_success.png)
 
 
-![dsds](talk.png)
+![dsds](./img/task.png)
+
+![dsds](./img/task_detal.png)
+
+![dsds](./img/user_info.png)
+
+![dsds](./img/singed.png)
+
+![dsds](./img/detail_main.png)
+
+![dsds](./img/feed_back.png)
 
 
-![dsds](client_talk.png)
+![dsds](./img/talk.png)
+
+
+![dsds](./img/client_talk.png)
 
